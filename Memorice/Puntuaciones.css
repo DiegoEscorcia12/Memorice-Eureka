@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagenes/imgh.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.Diego{
+    color: rgb(17, 16, 17);
+    background-color: #ce46e9;
+    font-size: 350%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 40%;
+    height: 15%;
+    border: solid 3px;
+    border-radius: 15%;
+    text-align: center;
+    top: 4%;
+    left: 29%;  
+    position: absolute;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.Diego2{
+   font-size: 56%;
+   top: 170%;
+   margin-left: 19%;
+  color: black;
+  position: absolute;
+}
+.Diego3{
+    font-size: 37%;
+    top: 10%;
+   color: black;
+   text-align: left;
+   position: absolute;
+
+}
+.Diego0{
+    width: 90%;
+    height: 240%;
+    left: 7%;
+    border: solid 3px;
+    border-radius: 10%;
+    color: black;
+    background-color: blueviolet;
+    margin-top: 40%;
+    position: absolute;
+    
+}
+.Diego4{
+    font-size: 36%;
+    top: 12%;
+    margin-left: 70%;
+    color: gold;
+    position: absolute;
+    
+}
+
+
+.salida{
+    position: relative;
+    margin-top: 6%;
+    bottom: 9vh;
+    right: 54%;
+    font-size: 130%;
+    background: #712296;
+    width: 4.1%;
+    border-radius: 50%;
+    
+}
+    .Diego5{
+        position: relative;
+        top: 360%;
+        color: rgb(0, 0, 0);
+        left: 3%;
+        font-size: 60%;         
+    }
+    .img2{
+       width: 150%;
+       height: 150%; 
+       margin-left: -590%;
+       margin-top: 40%;
+    }
+    .contenedor{
+        float: right;
+        animation: movimiento 2.5s linear infinite;
+           }
+           
+        .banner_img2{
+        float: right;
+        animation: movimiento 2.5s linear infinite;
+        }
+        @keyframes movimiento{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(12%);
+               }
+               100%{ 
+                transform: translateY(0);
+            }     
+        }
+        
+   .img3{
+    width: 3%;
+    height: 6%;
+    margin-left: -5%;
+    margin-top: 81%;
+    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
+    clip-path: circle(60%); /* Recorta la imagen en un círculo */
+    position: absolute;
+   }
+   .img4{
+    width: 3%;
+    height: 6%;
+    margin-left: 2%;
+    margin-top: 81%;
+    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
+    clip-path: circle(60%); /* Recorta la imagen en un círculo */
+    position: absolute;
+   }
+   .img5{
+    width: 3%;
+    height: 6%;
+    margin-left: 9%;
+    margin-top: 81%;
+    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
+    clip-path: circle(60%); /* Recorta la imagen en un círculo */
+    position: absolute;
+   }
+   .img6{
+    width: 40px;
+    height: auto;
+    margin-left: 29%;
+    margin-top: 67%;
+    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
+    clip-path: circle(50%); /* Recorta la imagen en un círculo */
+    position: absolute;
+   }
+
+
+

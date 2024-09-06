@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="op.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slider_container">
+            <div class="opciones">
+                <h1>Opciones</h1>
+                <div class="musica">
+                    <h2>Música</h2>
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="99" class="volumen_slider" id="volume-control">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+                <div class="musica">
+                    <h2>Volumen</h2>
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volumen_slider">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+                <div class="musica">
+                    <h2>Sonido De Cartas</h2>
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volumen_slider">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-button-container">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle music-menu-button" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li>
+                    <button id="music-toggle" class="dropdown-item">
+                        <i class="fa-solid fa-music"></i> Música
+                    </button>
+                </li>
+                <li>
+                    <button id="info-button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        <i class="fa-regular fa-circle-question"></i> Información
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Información del Juego</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¡Bienvenido a MEMORY! Este juego está diseñado para desafiar y mejorar tu memoria. Selecciona las cartas que coincidan y completa todos los pares en el menor tiempo posible.</p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Emparejar todas las cartas lo más rápido posible.</li>
+                        <li><strong>Controles:</strong> Haz clic en una carta para voltearla.</li>
+                        <li><strong>Niveles:</strong> Varios niveles de dificultad para todos los jugadores.</li>
+                        <li><strong>Sonido:</strong> Controla la música de fondo desde el menú.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" src="musica/DuckTales Music (NES) - The Moon Theme.mp3" loop></audio>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/musi.js"></script>
+</body>
+</html>
