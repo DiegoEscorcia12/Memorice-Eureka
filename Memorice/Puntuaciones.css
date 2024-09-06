@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
+    
 }
 .Diego{
     color: rgb(17, 16, 17);
@@ -38,6 +39,7 @@ body {
 .Diego3{
     font-size: 37%;
     top: 10%;
+    padding-left: 4%;
    color: black;
    text-align: left;
    position: absolute;
@@ -65,17 +67,23 @@ body {
 }
 
 
-.salida{
-    position: relative;
-    margin-top: 6%;
-    bottom: 9vh;
-    right: 54%;
-    font-size: 130%;
-    background: #712296;
-    width: 4.1%;
+.salida {
+    position: relative; /* O relative, dependiendo del contexto */
+    width: 50px; /* Ajusta según sea necesario */
+    height: 50px; /* Ajusta según sea necesario */
+    bottom: 20px; /* Ajusta según sea necesario */
+    right: 99vh; /* Ajusta según sea necesario */
+    margin-top: 39%;
+    font-size: 22px; /* Ajusta según sea necesario */
+    background: #c4118e;
     border-radius: 50%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+
     .Diego5{
         position: relative;
         top: 360%;
@@ -103,7 +111,7 @@ body {
                 transform: translateY(0);
             }
             50%{
-                transform: translateY(12%);
+                transform: translateY(20%);
                }
                100%{ 
                 transform: translateY(0);
@@ -141,7 +149,7 @@ body {
     width: 40px;
     height: auto;
     margin-left: 29%;
-    margin-top: 67%;
+    margin-top: 62%;
     object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
     clip-path: circle(50%); /* Recorta la imagen en un círculo */
     position: absolute;
