@@ -108,3 +108,16 @@ opacity: 1.0;
     top: -240px; 
     z-index: 1000; 
 }
+.button-salida{
+    position: relative;
+    border: solid 1px;
+    width: 45px;
+    height: 48px;
+    border-radius: 35px;
+    background-color: #a42aaf;
+      font-size: 34px;
+      margin-top: -81%;
+      right: 1vh;
+      padding-left: 7px;
+    
+}

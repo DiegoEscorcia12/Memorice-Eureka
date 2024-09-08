@@ -80,8 +80,8 @@ body {
     width: 50px; /* Ajusta según sea necesario */
     height: 50px; /* Ajusta según sea necesario */
     bottom: 20px; /* Ajusta según sea necesario */
-    right: 99vh; /* Ajusta según sea necesario */
-    margin-top: 39%;
+    right: 84vh; /* Ajusta según sea necesario */
+    margin-top: -50%;
     font-size: 22px; /* Ajusta según sea necesario */
     background: #c4118e;
     border-radius: 50%;
@@ -91,11 +91,12 @@ body {
     text-align: center;
 }
 .button-wrapper {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
 }
+
 
 .button-image {
     width: 80px; 

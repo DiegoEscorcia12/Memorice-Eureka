@@ -117,6 +117,14 @@ body {
     font-size: 30px; 
     cursor: pointer;
 }
+.menu-button-container{
+    position: relative;
+    right: 7vh;
+  margin-top: -210px;
+}
+.fa-solid{
+    font-size: 30px;
+}
 
 .instagram-button:hover {
     background-color: #5a6268; 
