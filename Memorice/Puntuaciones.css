@@ -10,10 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
     
 }
-.Diego{
+.container{
     color: rgb(17, 16, 17);
     background-color: #ce46e9;
-    font-size: 350%;
+    font-size: 345%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     width: 40%;
@@ -21,19 +21,37 @@ body {
     border: solid 3px;
     border-radius: 15%;
     text-align: center;
-    top: 4%;
-    left: 29%;  
-    position: absolute;
+     top: 4%;
+    left: 29%; 
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.Diego0{
+    width: 90%;
+    height: 240%;
+    font-size: 124%;
+    left: 7%;
+    border: solid 3px;
+    border-radius: 10%;
+    color: black;
+    margin-top: 40%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4)
+    
 }
 .Diego2{
-   font-size: 56%;
-   top: 170%;
-   margin-left: 19%;
-  color: black;
+    position: relative;
+   font-size: 59%;
+   top: 169%;
+   margin-left: 11%;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   position: absolute;
 }
 .Diego3{
@@ -43,23 +61,13 @@ body {
    color: black;
    text-align: left;
    position: absolute;
+   font-weight: bold;
 
 }
-.Diego0{
-    width: 90%;
-    height: 240%;
-    left: 7%;
-    border: solid 3px;
-    border-radius: 10%;
-    color: black;
-    background-color: blueviolet;
-    margin-top: 40%;
-    position: absolute;
-    
-}
+
 .Diego4{
-    font-size: 36%;
-    top: 12%;
+    font-size: 37%;
+    top: 10%;
     margin-left: 70%;
     color: gold;
     position: absolute;
@@ -67,7 +75,7 @@ body {
 }
 
 
-.salida {
+.button-salida{
     position: relative; /* O relative, dependiendo del contexto */
     width: 50px; /* Ajusta según sea necesario */
     height: 50px; /* Ajusta según sea necesario */
@@ -82,6 +90,19 @@ body {
     justify-content: center;
     text-align: center;
 }
+.button-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-image {
+    width: 80px; 
+    height: auto;
+    position: absolute;
+    top: -100px; 
+}
 
 
     .Diego5{
@@ -91,69 +112,80 @@ body {
         left: 3%;
         font-size: 60%;         
     }
+
     .img2{
        width: 150%;
        height: 150%; 
        margin-left: -590%;
-       margin-top: 40%;
+       margin-top: 24%;
     }
     .contenedor{
         float: right;
-        animation: movimiento 2.5s linear infinite;
-           }
-           
-        .banner_img2{
-        float: right;
-        animation: movimiento 2.5s linear infinite;
-        }
-        @keyframes movimiento{
-            0%{
-                transform: translateY(0);
-            }
-            50%{
-                transform: translateY(20%);
-               }
-               100%{ 
-                transform: translateY(0);
-            }     
-        }
+        animation: movimiento 2.5s linear infinite;   
+        margin-left: -23px;
         
-   .img3{
-    width: 3%;
-    height: 6%;
-    margin-left: -5%;
-    margin-top: 81%;
-    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
-    clip-path: circle(60%); /* Recorta la imagen en un círculo */
-    position: absolute;
-   }
-   .img4{
-    width: 3%;
-    height: 6%;
-    margin-left: 2%;
-    margin-top: 81%;
-    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
-    clip-path: circle(60%); /* Recorta la imagen en un círculo */
-    position: absolute;
-   }
-   .img5{
-    width: 3%;
-    height: 6%;
-    margin-left: 9%;
-    margin-top: 81%;
-    object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
-    clip-path: circle(60%); /* Recorta la imagen en un círculo */
-    position: absolute;
-   }
+           
+            }
+            .banner_img2{
+                float: right;
+                animation: movimiento 2.5s linear infinite;
+                font-weight: bold;
+                }
+            @keyframes movimiento{
+                0%{
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(15%);
+                   }
+                   100%{ 
+                    transform: translateY(0);
+                }     
+            }
+        
+           
    .img6{
-    width: 40px;
+    width: 50px;
     height: auto;
-    margin-left: 29%;
-    margin-top: 62%;
+    margin-left: 36%;
+    margin-top: 47%;
     object-fit: cover; /* Mantiene la proporción y cubre el área especificada */
     clip-path: circle(50%); /* Recorta la imagen en un círculo */
     position: absolute;
    }
+   .facebook{
+    position: relative;
+    margin-top: 159px;
+    margin-left: 439px;    
+    position: absolute;
+
+   }
+   .instagram{
+  position: relative;
+  margin-top: 160px;
+  margin-left: 527px;
+   }
+   .twitter{
+    position: relative;
+    margin-left: 600px;
+    margin-top: -38px;
+    
+    
+
+   }
+   .gif{
+    width: 55%;
+    height: 50%;
+    margin-left: 74%;
+    margin-top: 10%
+   }
+   .Felicidades{
+    font-size: 23px;
+    margin-top: 7%;
+    font-weight: 900;
+    color: aliceblue;
+    
+}
 
 
 
