@@ -27,11 +27,20 @@ flex-direction: column;
     font-weight: bold;
     
 }
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.text h1 {
+    animation: parpadeo 1s infinite;
+}
 .loading{
     width: 60%;
     height: auto;
     display: flex;
-    right: 49vh;
+    right: 45vh;
     justify-content: center;
     align-items: center;
     position: absolute;
