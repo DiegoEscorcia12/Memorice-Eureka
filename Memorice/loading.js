@@ -1,5 +1,10 @@
 
-// Simula la carga y redirige después de 3 segundos (3000 ms)
-setTimeout(function() {
-    window.location.href = 'https://chatgpt.com/'; // Reemplaza con la URL del juego o sitio deseado
-}, 3000);
+ // Simular el tiempo de carga con un timeout
+ setTimeout(function() {
+    // Ocultar el texto de carga y la animación
+    document.querySelector('.text').style.display = 'none';
+    document.querySelector('.loading').style.display = 'none';
+
+    // Mostrar el botón de menú
+    document.getElementById('menu-button').style.display = 'block';
+}, 3000); // Tiempo de carga simulado de 3 segundos

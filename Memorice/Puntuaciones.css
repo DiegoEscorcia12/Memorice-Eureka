@@ -55,7 +55,7 @@ body {
   position: absolute;
 }
 .Diego3{
-    font-size: 37%;
+    font-size: 34%;
     top: 10%;
     padding-left: 4%;
    color: black;
@@ -66,7 +66,7 @@ body {
 }
 
 .Diego4{
-    font-size: 37%;
+    font-size: 34%;
     top: 10%;
     margin-left: 70%;
     color: gold;
@@ -80,7 +80,7 @@ body {
     width: 50px; /* Ajusta según sea necesario */
     height: 50px; /* Ajusta según sea necesario */
     bottom: 20px; /* Ajusta según sea necesario */
-    right: 84vh; /* Ajusta según sea necesario */
+    right: 74vh; /* Ajusta según sea necesario */
     margin-top: -50%;
     font-size: 22px; /* Ajusta según sea necesario */
     background: #c4118e;
@@ -129,6 +129,8 @@ body {
             }
             .banner_img2{
                 float: right;
+                font-size: 50px;
+                padding-left: -20%;
                 animation: movimiento 2.5s linear infinite;
                 font-weight: bold;
                 }

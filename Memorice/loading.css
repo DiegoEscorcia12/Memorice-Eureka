@@ -58,7 +58,7 @@ flex-direction: column;
     height: 20px;
     border-radius: 20px;
     background-color: #572364;
-    animation: loading 4s forwards cubic-bezier(0,0,0,0);
+    animation: loading 2.9s forwards cubic-bezier(0,0,0,0);
 }
 @keyframes loading {
     0%{
@@ -68,3 +68,28 @@ flex-direction: column;
         width: 100%;
     }
 }
+
+
+        .container {
+            text-align: center;
+        }
+
+        .text h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+     
+
+
+        #menu-button {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
