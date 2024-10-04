@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background: url('imagenes/r364_akje_220615.jpg');
+    background-size: cover;
+    color: #333;
+    overflow: hidden;
+}
+
+.header {
+    width: 50%;
+    padding: 2px;
+    border-radius: 0 0 0 0;
+    margin-bottom: 4px;
+    margin-left: 780px;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(letra/NerkoOne-Regular.ttf);
+    font-weight: 100;
+}
+
+.logo {
+    width: 18%; 
+    height: auto;
+    display: block;
+    margin: 0 auto 12px; 
+    animation: moveLogoVertical 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveLogoVertical {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(25px); 
+    }
+}
+
+form {
+    border: 2px solid #9547a546;
+    border-radius: 16px;
+    padding: 2%; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    position: relative; 
+    bottom: 80px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-image: url(imagenes/50748.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-label {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 19px; 
+    color: #ffffff; 
+    margin-bottom: 8px; 
+    display: block; 
+}
+
+.form-control {
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    font-size: 14px; 
+    color: #333; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 0px; 
+}
+
+.valid-feedback, .invalid-feedback {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    color: #d9534f; 
+    display: none; 
+    margin-top: 5px; 
+}
+
+.form-check-label {
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    color: #ffffff; 
+    margin-left: 5px;
+}
+
+.btn-primary {
+    background-image: url(imagenes/ers.png);
+    background-position: center;
+    border-radius: 6px;
+    position: relative;
+    left: 25%;
+    border: 2px solid #881e8b00;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.btn-primary:hover {
+    background-color: #573c6f; 
+    transform: scale(1.05); 
+}
+
+.btn-primary:active {
+    background-color: #3e2d5b;
+    border-color: #7c1f78; 
+}
+
+.music-button:hover {
+    background-color: #5a6268; 
+}
+
+.dropdown-toggle {
+    background-color: transparent; 
+    border: none; 
+    color: #ffffff; 
+    font-size: 144%; 
+    position: absolute;
+    right: 20px; 
+    top: 20px; 
+    z-index: 1000; 
+}
+
+.text3 {
+    font-family: 'pixel';
+    font-size: 270%; 
+    color: #ffffff;
+    margin-left: 35%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.music-menu-button {
+    width: 78px;
+    height: 78px;
+    position: relative;
+    top: -2px;
+    left: 660px;
+    background-image: url(imagenes/icons8-menu-96.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none; 
+    background-color: transparent; 
+}
+
+.music-menu-button:hover {
+    opacity: 0.8;
+}
+
+.dropdown-menu {
+    background-color: #6c757d; 
+    color: #ffffff; 
+    border-radius: 8px; 
+    border: 1px solid #5a6268; 
+    padding: 10px; 
+}
+
+.dropdown-item {
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    font-size: 18px; 
+}
+
+.dropdown-item:hover {
+    background-color: #5a6268; 
+    color: #fff; 
+}
+
+.dropdown-item:focus {
+    background-color: #495057; 
+    color: #ffffff; 
+}
+
+.google-button, .faccebook-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    background-color: #6c757d00; 
+    color: #000000; 
+    border: none;
+    font-size: 39px; 
+    cursor: pointer;
+}
+
+.google-button:hover, .faccebook-button:hover, .music-button:hover {
+    background-color: #5a6268; 
+}
+
+
+.avatar-container {
+    position: absolute;
+    top: 3px; 
+    right: -30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent; 
+    animation: pulse 2s infinite;
+}
+
+.avatar-message {
+    background-color: #ffffffb0;
+    padding: 9px 9px;
+    font-family: 'pixel';
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -30px;
+}
+
+.avatar::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: scaleX(-1);
+    filter: blur(3px);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-title{
+    color: #000000;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal-body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 17px;
+    
+}
+.modal-content{
+    background-image: url(imagenes/1m1y_5wp1_220328.jpg);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
+    position: relative;
+    
+    top: 100px;
+}
+.modal-footer{
+    background-color: #ffffff00;
+    background-size: 140%;
+    background-repeat: no-repeat;
+
+}
+.btn-secondary{
+    background-color: #ffffff79;
+    border: #00000000;
+    font-size: 21px;
+    background-image: url(imagenes/1m1y_5wp1_220328.jpg);
+}
+@font-face{
+    font-family: 'pixel';
+    src: url(letra/NerkoOne-Regular.ttf);
+    font-weight: 100;
+    
+}
+
+.button-salida {
+    position: absolute; 
+    bottom: 40px; 
+    right: 970px; 
+    width: 90px; 
+    height: 50px; 
+    font-size: 32px; 
+    background: #31a9a700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.button-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-image {
+    width: 80px; 
+    height: auto;
+    position: absolute;
+    top: 50px; 
+}

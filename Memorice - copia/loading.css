@@ -1,0 +1,64 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background: url('imagenes/r364_akje_220615.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.text{
+    color: aliceblue;
+    margin-bottom: 25px;
+    font-size: 12px;
+    margin-top: -39px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+.logo {
+    width: 26%;
+    left: 36%;
+    position: relative;
+    bottom: 55px;
+    border-radius: 80%;
+    animation: moveLogoVertical 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveLogoVertical {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(25px); }
+}
+
+#loading-bar {
+    width: 0;
+    height: 20px;
+    background-color: #9e4caf;
+    border-radius: 20px;
+    transition: width 1s ease;
+}
+#containere {
+    width: 70%;
+    height: 20px;
+    background-color: rgba(240, 248, 255, 0.637);
+    border-radius: 20px;
+}
+.center{
+    margin-top: 200px;
+
+}
+.letra1{
+    font-family: 'pixel';
+    font-size: 180%; 
+    position:relative;
+    color: #ffffff;
+    left: 0px;
+    right: 0px;
+    bottom: 85px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}

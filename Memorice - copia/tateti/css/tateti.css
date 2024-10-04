@@ -1,0 +1,189 @@
+*
+	{
+		margin: 0;
+		padding: 0;
+		transition: all 0.5s;
+	}
+
+body
+	{
+		background-image: url('../img/r364_akje_220615.jpg');
+		background-size: cover;
+		font-family: 'Roboto', sans-serif;
+		min-height: 100vh;
+		display: grid;
+	}
+	.music-button:hover {
+		background-color: #5a6268;
+	}
+	
+	.dropdown-toggle {
+		background-color: transparent;
+		border: none;
+		color: #ffffff;
+		font-size: 144%;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 1000;
+	}
+	
+	.music-menu-button {
+		width: 78px;
+		height: 78px;
+		background-image: url('../img/icons8-menu-96.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		border: none;
+		background-color: transparent;
+		position: absolute; 
+		top: 20px; 
+		right: 20px; 
+	}
+	
+	.music-menu-button:hover {
+		opacity: 0.8;
+	}
+	.menu-button-container {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	
+	.dropdown-menu {
+		background-color: rgba(164, 42, 175, 0.39); 
+		color: #ffffff;
+		border-radius: 8px;
+		border: 1px solid #a42aaf;
+		padding: 10px;
+	}
+	
+	.dropdown-item {
+		padding: 10px 20px;
+		border-radius: 4px;
+		font-size: 18px;
+	}
+	
+	.dropdown-item:hover {
+		background-color: #d1d1d1;
+		color: #fff;
+	}
+	
+	.dropdown-item:focus {
+		background-color: #a42aaf;
+	}
+	
+h2, p
+	{
+		text-align: center;
+	}
+
+body > section
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 100px);
+		grid-template-rows: repeat(3, 100px);
+		grid-gap: 5px;
+		max-width: 310px;
+		margin: auto;
+	}
+
+article
+	{
+		background-color: rgba(255,255,255,0.4);
+		border-radius: 20px;
+		border-color: white;
+	}
+
+article:hover
+	{
+		background-color: rgba(255,255,255,0.7);
+	}
+
+article > p
+	{
+		display: block;
+		width: 100px;
+		height: 60px;
+		padding: 20px 0;
+		line-height: 60px;
+		font-size: 60px;
+	}
+
+p.O
+	{
+		color: red;
+	}
+
+p.X
+	{
+		color: green;
+	}	
+
+/*------------ CONTENEDOR DE MENSAJE ------------*/
+
+.contenedor
+	{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: grid;
+	grid-template-areas: ". . . . . ."
+						". . . . . ."
+						". . titulo titulo . ."
+						". . boton boton . ."
+						". . . . . ."
+						". . . . . ."
+						". . . . . .";
+	/*display: none;*/
+	}
+
+.contenedor > h2
+	{
+		 font-size: 50px;
+		 grid-area: titulo;
+		 color: white;
+		 align-self: center;
+	}
+
+.contenedor > input
+	{
+		grid-area: boton;
+		font-size: 30px;
+		padding: 5px;
+		border-radius: 20px;
+		background-color: rgba(0,255,0,0.5);
+		color: white;
+		border:none;
+	    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	}
+
+.contenedor > input:hover
+	{
+		background-color: rgba(32,124,17,1);
+	}
+
+@media screen and (min-width:600px)
+	{
+		body > section
+			{
+				grid-template-columns: repeat(3, 150px);
+				grid-template-rows: repeat(3, 150px);
+				grid-gap: 5px;
+				max-width: 460px;
+			}		
+
+		article > p
+			{
+				width: 150px;
+				height: 100px;
+				padding: 25px 0;
+				line-height: 100px;
+				font-size: 100px;
+			}
+	}

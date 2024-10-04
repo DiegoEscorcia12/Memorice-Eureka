@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        width: 50%;
+    }
+    .text3 {
+        font-size: 300%;
+    }
+    .btn-primary {
+        font-size: 1.5em;
+        padding: 10px 40px;
+    }
+    .avatar-container {
+        left: 50%;
+        bottom: 350px;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .logo {
+        width: 60%;
+    }
+    .text3 {
+        font-size: 200%;
+    }
+    .btn-primary {
+        font-size: 1.2em;
+        padding: 10px 30px;
+    }
+    .avatar-container {
+        left: 40%;
+        bottom: 250px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .logo {
+        width: 70%;
+    }
+    .text3 {
+        font-size: 150%;
+    }
+    .btn-primary {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .avatar-container {
+        left: 30%;
+        bottom: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo {
+        width: 90%;
+    }
+    .text3 {
+        font-size: 120%;
+    }
+    .btn-primary {
+        font-size: 0.8em;
+        padding: 8px 15px;
+    }
+    .avatar-container {
+        left: 20%;
+        bottom: 100px;
+    }
+}

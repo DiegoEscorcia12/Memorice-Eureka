@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background-image: url(/imagenes/r364_akje_220615.jpg);
+    background-size:cover;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    margin-top: 20px;
+    position: relative;
+    border-radius: 25px;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    border: 1px solid;
+}
+
+.card{
+    border: 1px solid;
+}
+.music-button:hover {
+    background-color: #5a6268;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: #ffffff; 
+    font-size: 144%;
+    z-index: 1000;
+}
+
+.music-menu-button {
+    background-image: url(/imagenes/icons8-menu-96.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+.music-menu-button:hover {
+    opacity: 0.8;
+}
+.dropdown-menu {
+    background-color: rgba(164, 42, 175, 0.39); 
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #a42aaf;
+}
+
+.dropdown-item {
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    background-color: #d1d1d1;
+    color: #000000;
+}
+
+.dropdown-item:focus {
+    background-color: #a42aaf;
+}
+
+.modal-title{
+    color: #000000;
+}
+.modal-body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    
+}
+.modal-content{
+    background-image: url(/imagenes/fondoM.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
+}
+.modal-footer{
+    background-image: url(/imagenes/fondoM.jpeg);
+}
