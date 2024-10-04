@@ -1,3 +1,4 @@
+// Script para crear confetti/chispitas
 const confettiContainer = document.querySelector('.confetti-container');
 
 function createConfetti() {
