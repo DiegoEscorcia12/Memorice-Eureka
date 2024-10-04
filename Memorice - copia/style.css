@@ -52,6 +52,10 @@ body {
     border-radius: 0px 0px 0 0;
     margin-bottom: 6px;
 }
+.Gif{
+    width: 14%;
+    height:auto;
+}
 
 .menu-content {
     display: flex;

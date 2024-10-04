@@ -31,13 +31,14 @@
                 <img src="./imagenes/we.png" class="max" alt="max">
             </div>
             <div class="button-container">
-                <a href="instrucciones.html" class="btn play">Laberinto-Online</a>
-                <a href="puntuloa.html" class="btn scores">Sala</a>
-                <a href="memoris.html" class="btn scores">Memorice-animal</a>
+                
+                <a href="instrucciones.html" class="btn-play"> <p class="p">Laberinto-Online</p></a>
+                <a href="puntuloa.html" class="btn-scores"><p class="p">Sala</p></a>
+                <a href="memoris.html" class="btnscores"><p class="p">MEMORICE-ANIMAL</p></a>
             </div>
         </div>
         <div class="footer">
-            <a href="loading.html" class="btn play">Salir</a>
+            <a href="loading.html" class=" "></a>
            
 <a href="#" class="btn play" id="playButton" style="background-color: #28a745; color: white; padding: 12px 24px; border-radius: 8px; text-align: center; text-decoration: none;">Sala</a>
 
@@ -53,7 +54,27 @@
 </div>
 
 <script>
+  var modal = document.getElementById("gameModal");
+  var playBtn = document.getElementById("playButton");
+  var span = document.getElementsByClassName("close")[0];
+
+
+  playBtn.onclick = function(event) {
+    event.preventDefault(); 
+    modal.style.display = "block"; // Mostrar modal
+  }
+
   
+  span.onclick = function() {
+    modal.style.display = "none"; // Ocultar modal
+  }
+
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 </script>
 
         </div>
