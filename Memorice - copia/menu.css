@@ -25,7 +25,7 @@ body {
 }
 .menu-container {
     width: 90%;
-    background-image: url(gif/SjzbUQi_gif\ \(500×475\).gif);
+    background-image: url(gif/descarga\ \(1\).gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
     background-color: transparent; 
     max-width: 800px;
     margin: 20px auto;
-    border: 2px solid #8129aa;
+    border: 2px solid #ffd000;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     bottom: -35px;
@@ -44,24 +44,19 @@ body {
     align-items: center;
     animation: fadeIn 1.5s forwards; 
 }
-@font-face{
-    font-family: 'pixel';
-    src: url(letra/NerkoOne-Regular.ttf);
-    font-weight: 100;
-    
-}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
 .header {
-    font-size: 79px;
+   
     font-family: "Jersey 25", sans-serif;
     text-align: center;
     color: #161616;
     font-size: 28px;
-    background: url('imagenes/OLQCP30.jpg');
+    background: url('gif/AnasAbdin_\ Photo.gif');
     background-size: cover;
     background-repeat: no-repeat;
     border: none; 
@@ -70,6 +65,9 @@ body {
     padding: 2px;
     border-radius: 0px 0px 0 0;
     margin-bottom: 6px;
+}
+.Modo{
+    font-size: 40px;
 }
 
 
@@ -233,7 +231,7 @@ body {
 }
 .message-box {
     
-    background: rgba(225, 0, 255, 0.6);
+    background: rgba(248, 252, 11, 0.6);
     border: none; 
     padding: 20px 30px; 
     margin: 30px auto; 
@@ -283,6 +281,19 @@ body {
     max-width: 500px;
     border-radius: 10px;
     text-align: center;
+  }
+  .btn-exit:hover{
+    transform: translateY(-5px); 
+  }
+  .btn-exit{
+    font-size: 19px;
+    width: 129px;
+    height: 70px;
+    background-image: url(imagenes/Corto.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
   }
 
   /* Botón de cierre del modal */
@@ -383,18 +394,8 @@ body {
     background-repeat: no-repeat;
 
 }
-.btn-secondary{
-    background-color: #ffffff79;
-    border: #00000000;
-    font-size: 21px;
-    background-image: url(imagenes/1m1y_5wp1_220328.jpg);
-}
-@font-face{
-    font-family: 'pixel';
-    src: url(letra/NerkoOne-Regular.ttf);
-    font-weight: 100;
-    
-}
+
+
 .max{
     width: 40%;
     height: 90px;
@@ -409,7 +410,7 @@ body {
     position: absolute;
     width: 460%;
     height: 460%;
-    background: url('imagenes/aca.png') repeat;
+
     animation: moveStars 70s linear infinite;
 }
 
