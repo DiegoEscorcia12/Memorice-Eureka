@@ -37,14 +37,14 @@ body {
 
 #loading-bar {
     width: 0;
-    height: 20px;
-    background-color: #9e4caf;
+    height: 40px;
+    background: linear-gradient(to left, #a202ff, #d400ff, #7400f8);
     border-radius: 20px;
     transition: width 1s ease;
 }
 #containere {
     width: 70%;
-    height: 20px;
+    height: 40px;
     background-color: rgba(240, 248, 255, 0.637);
     border-radius: 20px;
 }
