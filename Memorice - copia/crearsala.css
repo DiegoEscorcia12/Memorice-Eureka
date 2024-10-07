@@ -1,23 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
+body {
     margin: 0;
     padding: 0;
     background-image: url(./imagenes/descarga.gif);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-color: #000;
     height: 100vh;
-    width: 100vh;
     overflow: hidden;
 }
+
+.card {
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f8f9fa33;
+}
+
+.chat-container {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
 .logo{
-    width: 250px;
+    width: 25%;
+    border-radius: 50%;
+}
+.chat-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #00000031;
+    border-radius: 5px;
+    text-align: end;
+    color: #ccc;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.menu-container {
+    background-color: rgba(153, 145, 145, 0.308);
+    backdrop-filter: blur(0.2em);
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
     height: auto;
 }
-.players{
-    border: 1px solid #000;
+
+.content-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-1px);
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #f8f9fa;
+}
+
+#chat-input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #000000a9;
+    color: #ccc;
+}
+
+#chat-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(121, 121, 121, 0.5);
+}
+
+h1, h5 {
+    color: #333;
+}
+.checkbox {
+    display: none; /* Ocultar el checkbox original */
+}
+.checkbox-label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.checked {
+    background-color: green; 
+    border-color: green;
 }
