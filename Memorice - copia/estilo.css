@@ -25,11 +25,12 @@ body {
 }
 
 .logo {
-    width: 63%;
+    width: 43%;
     position: relative;
     bottom: 95px;
     animation: moveLogoVertical 2s infinite alternate ease-in-out;
     margin-bottom: 20px;
+    border-radius: 50%;
 }
 
 @keyframes moveLogoVertical {
@@ -38,7 +39,7 @@ body {
 }
 .text3 {
     font-family: 'pixel';
-    font-size: 880%; 
+    font-size: 780%; 
     position:relative;
     color: #ffffff;
     left: 0px;
