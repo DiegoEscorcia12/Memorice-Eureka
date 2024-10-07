@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eureka Memory</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="./crearsala.css">
+    <link rel="icon" type="image/jpg" href="/imagenes/icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js" defer></script>
+    <script src="./js/musi.js" defer></script>
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="text-center mt-5 justify-content-center d-flex text-center align-items-center">
+        <div class="menu-container fondo mt-5">
+            <h1>Eureka Memory</h1>
+            <div class="content-options">
+                <div class="button-wrapper">
+                    <a href="./index.html" class="btn btn-light">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle music-menu-button" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                        <li>
+                            <button id="music-toggle" class="dropdown-item">
+                                <i class="fa-solid fa-music"></i> Música
+                            </button>
+                        </li>
+                        <li>
+                            <button id="info-button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                <i class="fa-regular fa-circle-question"></i> Información
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-7">
+                    <h1 class="text3 animate__animated animate__fadeInDown">Lista de Jugadores</h1>
+                    <div class="card mb-3">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-user-circle me-3"></i>
+                                <span>Manuel</span>
+                            </div>
+                            <input type="checkbox" id="miCheckbox1" class="checkbox">
+                            <label for="miCheckbox1" class="checkbox-label"></label>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-user-circle me-3"></i>
+                                <span>Manuel</span>
+                            </div>
+                            <input type="checkbox" id="miCheckbox2" class="checkbox">
+                            <label for="miCheckbox2" class="checkbox-label"></label>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-user-circle me-3"></i>
+                                <span>Manuel</span>
+                            </div>
+                            <input type="checkbox" id="miCheckbox3" class="checkbox">
+                            <label for="miCheckbox3" class="checkbox-label"></label>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-user-circle me-3"></i>
+                                <span>Manuel</span>
+                            </div>
+                            <input type="checkbox" id="miCheckbox4" class="checkbox">
+                            <label for="miCheckbox4" class="checkbox-label"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="chat-container mb-5">
+                        <h1>Chat</h1>
+                        <div id="chat-box" class="chat-box">
+                        </div>
+                        <div class="chat-input mt-3">
+                            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/crearTablaPlayers.js"></script>
+    <audio id="background-music" src="./musica/DuckTales Music (NES) - The Moon Theme.mp3" loop></audio>
+
+</body>
+
+</html>
