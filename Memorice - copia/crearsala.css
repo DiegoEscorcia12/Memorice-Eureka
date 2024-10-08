@@ -65,7 +65,7 @@ body {
 }
 
 .dropdown-toggle:hover {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa00;
 }
 
 #chat-input {
@@ -86,7 +86,7 @@ h1, h5 {
     color: #333;
 }
 .checkbox {
-    display: none; /* Ocultar el checkbox original */
+    display: none;
 }
 .checkbox-label {
     display: inline-block;
@@ -101,4 +101,47 @@ h1, h5 {
 .checked {
     background-color: green; 
     border-color: green;
+}
+.dropdown-menu.custom::before{
+    display:none;
+}
+.dropdown-menu.custom::after {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+.card-icon {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.card-icon:last-child {
+    border-bottom: none; 
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.card-icon img:hover{
+    transform: translateY(-1px);
+    transition: transform 0.3s ease;
+}
+.description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+.description p {
+    margin-bottom: 8px;
 }

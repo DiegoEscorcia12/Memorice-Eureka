@@ -21,22 +21,22 @@ const chatBox = document.getElementById('chat-box');
         function addMensaje(mensaje, enviando) {
             const mensajeElemento = document.createElement('div');
             mensajeElemento.classList.add('chat-mensaje', enviando);
-            mensajeElemento.innerHTML = <p>${mensaje}</p>;
+            mensajeElemento.innerHTML = `<p>${mensaje}</p>`;
             chatBox.appendChild(mensajeElemento);
             chatBox.scrollTop = chatBox.scrollHeight; 
         }
 
-        // Selecciona todos los checkboxes y sus labels
-        const checkboxes = document.querySelectorAll('.checkbox');
-        const labels = document.querySelectorAll('.checkbox-label');
+// Selecciona todos los checkboxes y sus labels
+const checkboxes = document.querySelectorAll('.checkbox');
+const labels = document.querySelectorAll('.checkbox-label');
 
-        labels.forEach((label,index) => {
-            label.addEventListener('click', function () {
-                // Alterna la clase 'checked' según el estado del checkbox
-                if (checkboxes[index].checked) {
-                    label.classList.remove('checked');
-                } else {
-                    label.classList.add('checked');
-                }
-            });
-        });
+labels.forEach((label,index) => {
+    label.addEventListener('click', function () {
+    // Alterna la clase 'checked' según el estado del checkbox
+    if (checkboxes[index].checked) {
+        label.classList.remove('checked');
+        } else {
+            label.classList.add('checked');
+        }
+    });
+});
