@@ -85,8 +85,9 @@ body {
 }
 
 .avatar img {
-    width: 110%;
+    width: 140%;
     height: 80px;
+    margin-left: -12px;
     margin-bottom: 10px;
     border-radius: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -112,10 +113,11 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-    background-color: #ffd54f;
+    background-image: url(gif/fondo1.gif);
     border: none;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fffcfc;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;    
 }
@@ -139,9 +141,22 @@ body {
     background-image: url(gif/estrellass.gif);
     color: #ffffff;
 }
+.btn-exitt{
+    font-size: 20px;
+    background-image: url(gif/estrellass.gif);
+    margin-top: -12px;
+    color: #ffffff;
+    border: solid 3px #00eeff;
+}
+
 
 .btn.scores {
-    background-color: #9d62f0;
+    background-image: url(gif/estrellass.gif);
+    color: #ffffff;
+    font-size: 20px;
+    border: solid 3px #00eeff;
+    margin-top: -14px;
+
 }
 
 .btn.options {
@@ -191,24 +206,21 @@ body {
     margin-top: 20px;
 }
 
+
 .footer .btn {
     width: 100px;
 }
 
 .button-salida {
     position: absolute; 
-    width: 50px; 
-    height: 50px; 
     bottom: 450px; 
-    left: 60%; 
-    margin-top: -50%;
-    font-size: 37px; 
+    left: 50%; 
+    top: -480px;
+    font-size: 46px; 
     background: #31a9a70a;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    
+   
 }
 
 .button-wrapper {
@@ -365,7 +377,17 @@ body {
     background-color: #a42aaf;
 }
 .text3{
+        font-family: 'pixel';
+    font-size: 640%; 
+    position: relative;
+    top: 0px;
+    color: rgb(0, 204, 255);
+    left: 0px;
+    right: 0px;
+    bottom: 85px;
+    text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); /* Luz en el texto */
     color: #d1d1d1;
     font-size: 72px
+    
     
 }
