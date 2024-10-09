@@ -18,6 +18,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     border: 2px solid #fffcfc;
+    background: rgba(0, 17, 255, 0.2);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     bottom: -20px;
@@ -57,6 +58,7 @@ body {
     height:auto;
 }
 
+
 .menu-content {
     display: flex;
     justify-content: space-between;
@@ -83,8 +85,8 @@ body {
 }
 
 .avatar img {
-    width: 100%;
-    height: 100px;
+    width: 110%;
+    height: 80px;
     margin-bottom: 10px;
     border-radius: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -122,9 +124,20 @@ body {
     background-color: #ffca28;
     transform: scale(1.05);
 }
+.btn.exit{
+    font-size: 20px;
+    background-image: url(gif/estrellass.gif);
+    margin-top: -12px;
+    color: #ffffff;
+    border: solid 3px #00eeff;
+}
 
 .btn.play {
-    background-color: #4ff7ca;
+    font-size: 19px;
+    margin-top: -26px;
+   border: solid 3px #00eeff;
+    background-image: url(gif/estrellass.gif);
+    color: #ffffff;
 }
 
 .btn.scores {
@@ -132,12 +145,15 @@ body {
 }
 
 .btn.options {
-    background-color: #9d62f0;
+    font-size: 22px;
+    margin-top: -20px;
+    background-image: url(gif/estrellass.gif);
+    border: solid 3px #00eeff;
+    color: #ffffff;
 }
 
-.btn.exit {
-    background-color:#4ff7ca;
-}
+
+
 .btn:focus {
     outline: 2px solid #4fc3f7; 
     outline-offset: 4px;
@@ -260,6 +276,7 @@ body {
 .max{
     width: 30%;
     height: 50px;
+    margin-top: -30px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;

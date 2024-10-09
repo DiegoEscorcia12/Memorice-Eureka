@@ -22,8 +22,10 @@ body {
     
 }
 .logo {
-    width: 26%;
+    width: 66%;
     left: 36%;
+    margin-top: -180px;
+    margin-left: -240px;
     position: relative;
     bottom: 55px;
     border-radius: 80%;
