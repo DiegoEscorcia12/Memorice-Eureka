@@ -39,7 +39,7 @@ body {
 }
 
 form {
-    border: 2px solid #9547a546;
+    border: 4px solid #00000046;
     border-radius: 16px;
     padding: 2%; 
     background: rgba(0, 0, 0, 0.2);
@@ -60,7 +60,7 @@ form {
 
 .form-control {
     border-radius: 30px; 
-    border: 4px solid #050a52; 
+    border: 4px solid #000000; 
     padding: 15px; 
     font-size: 14px; 
    background: rgba(0, 0, 0, 0.2);
