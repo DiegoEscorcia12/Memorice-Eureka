@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./gif/fondo\ azull.gif);
+    background-image: url(./gif/Retronator.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,9 +10,6 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
-
-
 
 
 .logo {

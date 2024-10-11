@@ -43,51 +43,93 @@
             </div>
         </div>
         <div class="row mt-4 justify-content-center">
-            <img class="imagen col-4 ms-5" src="./imagenes/Ellipse 1.png" alt="">
+            <img class="imagen col-4 ms-5" src="./imagenes/robott-removebg-preview.png" alt="">
         </div>
         <h1 class="text3 animate__animated animate__fadeInDown">Calificaciones</h1>
 
         <!-- Scores Section -->
         <div class="row justify-content-center">
             <div class="col-md-7">
+               
+                 <style>
+        .card {
+            margin-bottom: 10px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+    </style>
                 
-                <div class="card mb-3">
-                    <div class="card-body d-flex align-items-center ">
-                        <i class="fa-solid fa-user-astronaut me-3 fa-2x text-primary"></i>
-                        <div class="titulo1">
-                            <h5 class="card-title">Manuel Felipe</h5>
-                            <p class="card-text">20,290 Puntos</p>
+                <div class="container">
+                    <div id="ranking">
+                        <div class="card mb-4">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fa-solid fa-user-astronaut me-3 fa-2x text-primary"></i>
+                                <div class="titulo1">
+                                    <h5 class="card-title">Manuel Felipe</h5>
+                                    <p class="card-text">20,290 Puntos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fa fa-user-circle fa-2x"></i> Jorge
+                                </div>
+                                <span>12,480 Puntos</span>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fa fa-user-circle fa-2x"></i> Trespalacios
+                                </div>
+                                <span>10,430 Puntos</span>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fa fa-user-circle fa-2x"></i> Andrés
+                                </div>
+                                <span>4,420 Puntos</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <div>
-                            <i class="fa fa-user-circle fa-2x"></i> Jorge
-                        </div>
-                        <span>12,480 Puntos</span>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <div>
-                            <i class="fa fa-user-circle fa-2x"></i> Trespalacios
-                        </div>
-                        <span>10,430 Puntos</span>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <div>
-                            <i class="fa fa-user-circle fa-2x"></i> Andrés
-                        </div>
-                        <span>4,420 Puntos</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
+                <script>
+       function swapElements(parent, index1, index2) {
+            const elements = parent.children;
+            if (index1 >= 0 && index2 >= 0 && index1 < elements.length && index2 < elements.length) {
+                // Intercambiar los elementos
+                const firstElement = elements[index1];
+                const secondElement = elements[index2];
+                parent.insertBefore(secondElement, firstElement);
+            }
+        }
+
+        // Función para rotar los elementos ordenadamente
+        function rotateElements(parent) {
+            let index = 0;
+            const totalElements = parent.children.length;
+
+            setInterval(() => {
+                // Mueve el primer elemento al final
+                if (index < totalElements - 1) {
+                    swapElements(parent, index, index + 1);
+                    index++;
+                } else {
+                    index = 0; // Reiniciar para continuar el ciclo
+                }
+            }, 1500); // Intervalo de 1.5 segundos entre cada movimiento
+        }
+
+        // Ejecutar la rotación cuando la página se cargue
+        window.addEventListener("load", function() {
+            var rankingContainer = document.getElementById("ranking");
+
+            // Llamar a la función para rotar los elementos
+            rotateElements(rankingContainer);
+        });
+                </script>
 
         <!-- Modal de información -->
         <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">

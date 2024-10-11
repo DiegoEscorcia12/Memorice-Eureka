@@ -196,15 +196,17 @@ form {
     align-items: center;
 }
 
-.avatar {
+.avatarr {
     width: 120px;
     height: 120px;
+    margin-top: -20px;
     border-radius: 50%;
     background-color: transparent; 
     animation: pulse 2s infinite;
 }
 
 .avatar-message {
+
     background: rgba(255, 255, 255, 0.2);
     padding: 9px 9px;
     font-family: 'pixel';
@@ -212,7 +214,7 @@ form {
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    margin-top: -35px;
+    margin-top: -25px;
 }
 
 .avatar::after {
