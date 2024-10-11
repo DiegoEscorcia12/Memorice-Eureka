@@ -9,10 +9,6 @@
         font-size: 1.5em;
         padding: 10px 40px;
     }
-    .avatar-container {
-        left: 50%;
-        bottom: 350px;
-    }
 }
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
@@ -25,10 +21,6 @@
     .btn-primary {
         font-size: 1.2em;
         padding: 10px 30px;
-    }
-    .avatar-container {
-        left: 40%;
-        bottom: 250px;
     }
 }
 
@@ -43,10 +35,6 @@
         font-size: 1em;
         padding: 10px 20px;
     }
-    .avatar-container {
-        left: 30%;
-        bottom: 150px;
-    }
 }
 
 @media (max-width: 575px) {
@@ -59,9 +47,5 @@
     .btn-primary {
         font-size: 0.8em;
         padding: 8px 15px;
-    }
-    .avatar-container {
-        left: 20%;
-        bottom: 100px;
     }
 }

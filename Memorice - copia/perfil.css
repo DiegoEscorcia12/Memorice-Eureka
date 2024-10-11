@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url(/imagenes/r364_akje_220615.jpg);
+    background-image: url(./imagenes/r364_akje_220615.jpg);
     background-size:cover;
     overflow: hidden;
     font-family: 'Bungee', cursive;
@@ -11,7 +11,7 @@ body{
     max-width: 800px; /* Limita el ancho máximo */
     right: 0;
     left: 0;
-    background: url('imagenes/50748.jpg') no-repeat center center;
+    background: url('./imagenes/50748.jpg') no-repeat center center;
     background-size: cover;
     border: none;
     background-color: transparent;

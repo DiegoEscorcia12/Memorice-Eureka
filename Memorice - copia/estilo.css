@@ -1,125 +1,76 @@
 body {
     margin: 0;
-    font-family: 'Pixel';
-    background: url('gif/fondo\ azull.gif');
+    padding: 0;
+    background-image: url(./gif/fondo\ azull.gif);
+    background-position: center;
     background-size: cover;
-    color: #333;
-    overflow: hidden; 
-    position: fixed;
-    right: -50%;
-    height: 200vh; 
-    width: 200vw;
+    background-repeat: no-repeat;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    width: 100vw; 
-    margin: auto;
-    text-align: center;
-    border-radius: 10%;
-    padding: 5%;
-    position: relative;
-}
+
+
+
 
 .logo {
-    width: 55%;
-    position: relative;
-    bottom: 95px;
-    margin-top: 50px;
+    width: 50vh;
+    border-radius: 50px;
     animation: moveLogoVertical 2s infinite alternate ease-in-out;
-    margin-bottom: 20px;
-    border-radius: 36%;
 }
 
+.logo:hover {
+    box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.5), 
+                10px 10px 30px rgba(255, 255, 255, 0.211); 
+    transform: scale(1.05); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+    border:0.1px solid #000 ;
+}
 @keyframes moveLogoVertical {
     0% { transform: translateY(0); }
-    100% { transform: translateY(25px); }
-}
-.text3 {
-    font-family: 'pixel';
-    font-size: 640%; 
-    position: relative;
-    top: 0px;
-    color: rgb(0, 204, 255);
-    left: 0px;
-    right: 0px;
-    bottom: 85px;
-    text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); /* Luz en el texto */
+    100% { transform: translateY(10px); }
 }
 
-.text2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 4vw; 
-    color: #fff;
-    font-weight: bold;
+.text3 {
+    font-family: 'pixel';
+    font-size: 3.5em;
+    color: rgb(0, 204, 255);
+    text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); 
+    text-transform: uppercase;
 }
 
 .btn-primary {
-background-image: url(gif/boton\ azul.jfif);
+    margin-top: 15px;
+    background-image: url(gif/fondo1.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 152px;
-    height: 45px;
-    font-size: 2.0em;
-    margin-top: -190px;
-    padding: 15px 60px;
-    position: relative;
+    width: 180px;
+    height: 55px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 1000px;
+    color: rgb(0, 204, 255);
+    text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); 
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
 }
+
 .btn-primary:hover {
     background-color: #5a5a9f; 
-    transform: translateY(-5px); 
+    transform: translateY(-2px); 
     box-shadow: 0 12px 24px rgba(99, 71, 255, 0.8);
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(108, 117, 125, 0.7);
-    }
-    70% {
-        transform: scale(1.1);
-        box-shadow: 0 0 15px 15px rgba(108, 117, 125, 0);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(108, 117, 125, 0);
-    }
-}
-
-
-.music-button:hover {
-    background-color: #5a6268; 
-}
-.dropdown-toggle {
-    background-color: transparent; 
-    border: none; 
-    color: #ffffff00; 
-    font-size: 144%; 
-    position: relative;
-    left: 810%;
-    bottom: 310px;
-    z-index: 1000; 
-}
 .music-menu-button {
-    width: 78px;
-    height: 78px;
-    position: relative;
-    top: -310px;
-    left: 470px;
+    width: 60px;
+    height: 60px;
     background-image: url(imagenes/icons8-menu-96.png); 
     background-size: cover;
     border: none; 
     background-color: transparent; 
 }
-
 
 .music-menu-button:hover {
     opacity: 0.8;
@@ -148,106 +99,21 @@ background-image: url(gif/boton\ azul.jfif);
     background-color: #a42aaf; 
     color: #ffffff; 
 }
-.avatar-container {
-    position: relative;
-    display: flex;
-    left: 67%;
-    bottom: 451px;
-    align-items: center;
-    justify-content: center;
-}
 
-.avatar {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent; 
-    animation: pulse 2s infinite;
-}
-.avatar::after {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 20%;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    transform: scaleX(-1);
-    filter: blur(3px);
-}
-
-.avatar-message {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffffb0;
-    padding: 10px 8px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-    color: #000;
-    text-align: center;
-    font-size: 18px;
-}
-.modal-title{
-    color: #000000;
-    font-size: 24px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.modal-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
-    font-size: 17px;
-    
-}
-.modal-content{
-    background-image: url(imagenes/1m1y_5wp1_220328.jpg);
-    background-size: 160%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
-    position: relative;
-    
-    top: 100px;
-}
-.modal-footer{
-    background-color: #ffffff00;
-    background-size: 140%;
-    background-repeat: no-repeat;
-
-}
-.btn-secondary{
-    background-color: #ffffff79;
-    border: #00000000;
-    font-size: 21px;
-    background-image: url(imagenes/1m1y_5wp1_220328.jpg);
-}
-@font-face{
+@font-face {
     font-family: 'pixel';
     src: url(letra/NerkoOne-Regular.ttf);
     font-weight: 100;
-    
 }
+
 .starry-background {
-    position: absolute;
     width: 460%;
     height: 460%;
-  
     animation: moveStars 70s linear infinite;
 }
 
 @keyframes moveStars {
-    
     from { background-position: 0 0; }
     to { background-position: -10000px 0; }
 }
-.logo:hover {
-    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.211);
-    transform: scale(1.05);
-}
+
