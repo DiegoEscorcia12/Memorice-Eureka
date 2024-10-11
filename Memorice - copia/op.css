@@ -4,8 +4,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('imagenes/r364_akje_220615.jpg');
+    background: url('gif/Protobacillus.gif');
     background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
@@ -19,6 +20,11 @@ body {
     height: 700px;
     overflow: hidden;
 }
+h1{
+  text-shadow: 0px 0px 36px rgb(2, 2, 2); 
+  text-transform: uppercase;
+}
+
 
 .container::before {
     content: '';
@@ -39,33 +45,25 @@ h2{
     font-size: 1.7em;
 }
 .menu-container {
- height: 800px;
-  width: 500px; /* Limita el ancho máximo */
+  height: 800px;
+  width: 800px; /* Ajusta el ancho a 800px */
   right: 0;
   left: 0;
+  margin-top: -25%; /* Aumenta el desplazamiento hacia arriba */
   background: url('imagenes/50748.jpg') no-repeat center center;
   background-size: cover;
   border: none;
   background-color: transparent;
   margin: 20px auto;
-  border: 2px solid #8129aa;
+
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   position: relative;
   border-radius: 12px;
   align-items: center;
-
-  
 }
-.avatar img {
-  width: 39%;
-  height: 110px;
-  margin-left: -129%;
-  margin-top: -100px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: parpadeo 2s infinite; 
-} 
+
+
+
 .avatar img:hover {
   transform: scale(1.1); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
@@ -97,7 +95,7 @@ h2{
   left: 10px;
 }
 .dropdown-menu {
-  background-color: rgba(164, 42, 175, 0.39); 
+  background-color: rgba(0, 0, 0, 0.39); 
   color: #ffffff;
   border-radius: 8px;
   border: 1px solid #000000;
@@ -166,11 +164,11 @@ h2{
     background-color: #a42aaf;
 }
 .button-salida{
-    position: relative;
-      font-size: 34px;
-      margin-top: -119%;
-      right: -1vh;
-      padding-left: 7px;
+  position: relative;
+  position: absolute;
+  font-size: 33px;
+    top: 4%;
+    left: 2%;
     
 }
 .dropdown{
@@ -180,7 +178,7 @@ h2{
 }
 .slider_container {
     padding: 20px;
-    background: rgba(252, 112, 18, 0.1)
+    background: rgba(0, 0, 0, 0.5)
     
   }
   
@@ -204,9 +202,19 @@ h2{
     margin-top: 17%;
     border:3px solid #000000;
     border-radius: 20px;
-    background-color: rgba(255, 251, 0, 0.4);
+  background-image: url(gif/Erica\ Anderson.gif);
+    text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
+
     
   }
+  .musica:hover {
+  
+    transform: translateY(-18px); 
+    box-shadow: 0 12px 24px rgba(99, 71, 255, 0.8);
+}
+  
   .jersey-25-regular {
     font-size: 80px;
     font-family: "Jersey 10 Charted", ;
@@ -228,7 +236,7 @@ h2{
   
   .musica h2 {
     font-size: 1.5em;
-    color: #861e70;
+    color: #888888;
     text-shadow: 2px 2px 4px rgba(255, 153, 0, 0.3);
   }
   
@@ -246,23 +254,23 @@ h2{
   .volumen_slider::-webkit-slider-thumb {
     width: 30px;
     height: 30px;
-    background: #ff5900;
+    background: #ffffff;
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    box-shadow: 0px 0px 15px rgba(212, 0, 255, 0.7);
+    box-shadow: 0px 0px 15px rgba(13, 247, 255, 0.7);
     transition: box-shadow 0.2s ease;
   }
   
   .volumen_slider:hover::-webkit-slider-thumb {
-    box-shadow: 0px 0px 20px rgb(204, 0, 255);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
   }
   .volumen_slider {
     width: 80%;
     height: 15px;
     margin-top: -12%;
-    background: linear-gradient(to right, #ff6f61, #ce5200);
+    background: linear-gradient(to right, #4e1e9b, #01aeff);
     border-radius: 5px;
     -webkit-appearance: none;
     appearance: none;
@@ -274,9 +282,9 @@ h2{
 .volumen_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: #d413c4;
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
     border-radius: 50%; 
     cursor: pointer;
 }
@@ -284,7 +292,7 @@ h2{
 .volumen_slider:hover::-webkit-slider-thumb {
     width: 30px;
     height: 30px;
-    background-color: #ff5100;
+    background-color: #05b0ff;
     border-radius: 50%;
     cursor: pointer;
 }
