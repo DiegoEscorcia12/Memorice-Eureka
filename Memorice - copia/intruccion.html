@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,59 +11,63 @@
     <link rel="icon" href="./imagenes/icon.jpg" type="image/jpg">
     <link href="./https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-        
 </head>
-<body
-    <div class=" text-center" >
-        <div class="menu-container"> 
-        
-        <div class="col-0 d-flex justify-content-between mt-2">
-            <div class="button-wrapper">
-                <div class="button-salida">
-                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+<body>
+    <div class="text-center">
+        <div class="menu-container container"> 
+            <!-- Cabecera del menú -->
+            <div class="d-flex justify-content-between mt-2 align-items-center">
+                <div class="button-wrapper">
+                    <div class="button-salida">
+                        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle music-menu-button" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                        <li>
+                            <button id="music-toggle" class="dropdown-item">
+                                <i class="fa-solid fa-music"></i> Música
+                            </button>
+                        </li>
+                        <li>
+                            <button id="info-button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                <i class="fa-regular fa-circle-question"></i> Información
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="btn dropdown-toggle music-menu-button" type="button" id="menuDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-                    <li>
-                        <button id="music-toggle" class="dropdown-item">
-                            <i class="fa-solid fa-music"></i> Música
-                        </button>
-                    </li>
-                    <li>
-                        <button id="info-button" class="dropdown-item" data-bs-toggle="modal"
-                            data-bs-target="#infoModal">
-                            <i class="fa-regular fa-circle-question"></i> Información
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        
-        <h1 class="text3 animate__animated animate__fadeInDown">Instrucciones</h1>
-        <div class="center-section">
-            <div class="message-box">
-                <div class="instruccion">
-                <p>¡Bienvenido compañero virtual a las Instrucciones de Nuestro Juego MEMORICE EUREKA.!
-                    <br>*Objetivo del juego es ayudar a los usuarios a mejorar la memoria a corto plazo. <div class="como">¡COMO JUGAR!</div¡>
-                  <p class="uno">1 Baraja las tarjetas y colócalas boca abajo en una cuadrícula.</p>
-                  <p class="uno">2 Cada jugador, en su turno, puede voltear dos tarjetas.</p>
-                  <p class="uno">3 Si las tarjetas coinciden, el jugador las retira y obtiene un punto. Si no, se vuelven a poner boca abajo.</p>
-                  <p class="uno">4 El juego continúa hasta que todas las tarjetas han sido emparejadas.</p>
-                  <p class="uno">5 El jugador con más puntos al final gana.</p>
+
+            <!-- Título de instrucciones -->
+            <h1 class="text3 animate__animated animate__fadeInDown">Instrucciones</h1>
+
+            <!-- Sección central con las instrucciones -->
+            <div class="center-section row justify-content-center align-items-center">
+                <div class="message-box col-md-6">
+                    <div class="instruccion">
+                        <p>¡Bienvenido compañero virtual a las Instrucciones de Nuestro Juego MEMORICE EUREKA.!</p>
+                        <p><strong>Objetivo del juego:</strong> Ayudar a los usuarios a mejorar la memoria a corto plazo.</p>
+                        <div class="como"><strong>¡CÓMO JUGAR!</strong></div>
+                        <ul class="list-unstyled">
+                            <li>1. Baraja las tarjetas y colócalas boca abajo en una cuadrícula.</li>
+                            <li>2. Cada jugador, en su turno, puede voltear dos tarjetas.</li>
+                            <li>3. Si las tarjetas coinciden, el jugador las retira y obtiene un punto. Si no, se vuelven a poner boca abajo.</li>
+                            <li>4. El juego continúa hasta que todas las tarjetas han sido emparejadas.</li>
+                            <li>5. El jugador con más puntos al final gana.</li>
+                        </ul>
+                    </div>
                 </div>
-                <img src="./imagenes/we.png" class="max" alt="max">
+
+                <!-- Imagen del robot al lado de las instrucciones -->
+                <div class="col-md-4 text-center">
+                    <img class="imagen img-fluid" src="./imagenes/robottt.png" alt="Robot">
+                </div>
             </div>
-            <div class="row mt-4 justify-content-center"></div>
-            <img class="imagen col-4 ms-5" src="/imagenes/Ellipse 1.png" alt="">
-        </div>
         </div>
 
-       
         <!-- Modal de información -->
         <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -86,8 +91,8 @@
                 </div>
             </div>
         </div>
+    </div>
 
-      
-       
 </body>
+
 </html>

@@ -1,12 +1,14 @@
+/* Estilos generales */
 body {
     font-family: 'sans-serif';
     margin: 0;
-  background-image: url(gif/AnasAbdin_\ Photo.gif);
+    background-image: url(gif/AnasAbdin_\ Photo.gif);
     padding: 0;
     background-size: cover;
     color: #333;
-    overflow:hidden; 
+    overflow: hidden; 
 }
+
 .logo {
     width: 20%; 
     height: auto;
@@ -23,6 +25,7 @@ body {
         transform: translateY(25px); 
     }
 }
+
 .menu-container {
     width: 90%;
     background-image: url(gif/descarga\ \(1\).gif);
@@ -36,9 +39,7 @@ body {
     border: 2px solid #ffd000;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    bottom: -35px;
     border-radius: 12px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,8 +51,8 @@ body {
         opacity: 1;
     }
 }
+
 .header {
-   
     font-family: "Jersey 25", sans-serif;
     text-align: center;
     color: #161616;
@@ -64,12 +65,11 @@ body {
     width: 50%;
     padding: 2px;
     border-radius: 0px 0px 0 0;
-    margin-bottom: 6px;
-}
-.Modo{
-    font-size: 40px;
 }
 
+.Modo {
+    font-size: 40px;
+}
 
 .menu-content {
     display: flex;
@@ -77,12 +77,12 @@ body {
     width: 100%;
     align-items: center;
 }
-.btn-exit{
+
+.btn-exit {
     font-size: 79px;
     font-family: "Jersey 25", sans-serif;
     text-align: center;
     color: #161616; 
-
 }
 
 .left-section, .right-section {
@@ -97,6 +97,7 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
 .center-section h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -116,6 +117,7 @@ body {
     transform: scale(1.1); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
 @keyframes parpadeo {
     0% { opacity: 1; }
     50% { opacity: 0.5; }
@@ -125,91 +127,71 @@ body {
 .message-box p {
     animation: parpadeo 2s infinite; 
 }
+
 .btn {
     display: block;
     width: 120px;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-   
     border: none;
     border-radius: 8px;
-   
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;    
 }
-
 
 .btn:hover {
     background-color: #f0efeb;
     transform: scale(1.05);
 }
-.btn-play:hover{
-    transform: scale(1.05);
-}
-.btn-scores:hover{
-    transform: scale(1.05);
-}
-.btnscores:hover{
-    transform: scale(1.05);
-}
+
 .btn-play {
     background-image: url(imagenes/Boton\ Moradoo.jpg);
     background-position: center;
     background-repeat: no-repeat;
-   background-size: cover;
-   border-radius: 100px;
-   padding-top: 18px;
+    background-size: cover;
+    border-radius: 100px;
+    padding-top: 18px;
     width: 250px;
     height:70px;
-    margin-top: -50px;
-    margin-left: -255px;
-   font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    position: absolute
-   
 }
-
 
 .btn.scores {
     font-size: 25px;
     font-family: "Jersey 25", sans-serif;
-    margin-top: 100px;
     text-align: center;
     color: #000000;
 }
-.btn-scores{
+
+.btn-scores {
     background-image: url(imagenes/boton\ amarillo.jpg);
-    position: relative;
-    position: absolute;
     width: 250px;
     height: 70px;
     border-radius: 30px;
     padding-left: 67px;
     padding-top: 10px;
-    right: 1vh;
     margin-top: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.btnscores{
+
+.btnscores {
     background-image: url(imagenes/boton\ amarillo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
-    position: absolute;
     width: 250px;
     height: 70px;
     border-radius: 30px;
-    margin-top: 113PX;
+    margin-top: 113px;
     padding-top: 10px;
-    margin-left: -259px;
 }
 
 .btn.options {
-   background: rgba(154, 3, 255, 0.5);
+    background: rgba(154, 3, 255, 0.5);
     border: 3px solid #000000;
     font-size: 25px;
     font-family: "Jersey 25", sans-serif;
@@ -218,26 +200,19 @@ body {
 }
 
 .btn.exit {
-    background-color:#4ff7ca;
-    
+    background-color: #4ff7ca;   
 }
+
 .btn:focus {
     outline: 2px solid #4fc3f7; 
     outline-offset: 4px;
 }
-.center-section h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+
 .message-box {
-    
     background: rgba(248, 252, 11, 0.6);
     border: none; 
     padding: 20px 30px; 
     margin: 30px auto; 
-    position: relative;
-    bottom: 6px;
-    right: 200px;
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
     line-height: 1.6; 
@@ -248,31 +223,29 @@ body {
     color: #333; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
 }
+
 .message-box:hover {
     transform: translateY(-5px); 
     background-color: rgba(255, 255, 255, 1); 
 }
+
 .modal {
     display: none; /* Oculto inicialmente */
-    position: fixed; /* Fijo en la pantalla */
     z-index: 1; /* Encima de otros elementos */
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
-  }
-  .p{
-    position: absolute;
+}
+
+.p {
     font-family: "Jersey 25", sans-serif;
-    margin-left: 38px;
     font-size: 26px;
     color: #000;
 }
 
-  /* Contenido del modal */
-  .modal-content {
+/* Contenido del modal */
+.modal-content {
     background-color: #fff;
     margin: 15% auto; /* Centrar el modal */
     padding: 20px;
@@ -281,11 +254,13 @@ body {
     max-width: 500px;
     border-radius: 10px;
     text-align: center;
-  }
-  .btn-exit:hover{
+}
+
+.btn-exit:hover {
     transform: translateY(-5px); 
-  }
-  .btn-exit{
+}
+
+.btn-exit {
     font-size: 19px;
     width: 129px;
     height: 70px;
@@ -293,29 +268,28 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-  }
+}
 
-  /* Botón de cierre del modal */
-  .close {
+/* Botón de cierre del modal */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
 
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 .footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
+
 }
 
 .footer .btn {
@@ -323,12 +297,8 @@ body {
 }
 
 .button-salida {
-    position: relative; 
     width: 50px; 
     height: 50px; 
-    bottom: 90px; 
-    right: 100vh; 
-    margin-top: -50%;
     font-size: 37px; 
     background: #31a9a70a;
     border-radius: 50%;
@@ -340,7 +310,6 @@ body {
 
 .button-wrapper {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
 }
@@ -348,147 +317,16 @@ body {
 .button-image {
     width: 80px; 
     height: auto;
-    position: absolute;
-    top: -100px; 
 }
-.button-container {
-    position: absolute;
-    top: 190px;
-    right: 100px;
-}
+
+
 .button-container .btn {
     font-size: 26px; 
-    padding: 15px 25px; 
-    border-radius: 8px; 
+    padding: 10px; 
+    width: 150px; 
+}
+
+.btn-exit-container {
+    margin: 20px 0;
     text-align: center; 
-    width: 250px; 
-    height: 70px; 
-}
-.modal-title{
-    color: #000000;
-    font-size: 24px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.modal-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
-    font-size: 17px;
-    
-}
-.modal-content{
-    background-image: url(imagenes/1m1y_5wp1_220328.jpg);
-    background-size: 160%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
-    position: relative;
-    
-    top: 100px;
-}
-.modal-footer{
-    background-color: #ffffff00;
-    background-size: 140%;
-    background-repeat: no-repeat;
-
-}
-
-
-.max{
-    width: 40%;
-    height: 90px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent; 
-    animation: pulse 2s infinite;
-}
-
-.starry-background {
-    position: absolute;
-    width: 460%;
-    height: 460%;
-
-    animation: moveStars 70s linear infinite;
-}
-
-@keyframes moveStars {
-    
-    from { background-position: 0 0; }
-    to { background-position: -10000px 0; }
-}
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-.music-button:hover {
-    background-color: #5a6268;
-}
-
-.dropdown-toggle {
-    background-color: transparent;
-    border: none;
-    color: #ffffff; 
-    font-size: 144%;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 1000;
-}
-
-.music-menu-button {
-    width: 78px;
-    height: 78px;
-    background-image: url(imagenes/icons8-menu-96.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    background-color: transparent;
-    position: absolute; 
-    top: 20px; 
-    right: 20px; 
-}
-
-.music-menu-button:hover {
-    opacity: 0.8;
-}
-.menu-button-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.dropdown-menu {
-    background-color: rgba(164, 42, 175, 0.39); 
-    color: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #a42aaf;
-    padding: 10px;
-}
-
-.dropdown-item {
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 18px;
-}
-
-.dropdown-item:hover {
-    background-color: #d1d1d1;
-    color: #fff;
-}
-
-.dropdown-item:focus {
-    background-color: #a42aaf;
 }
