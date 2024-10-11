@@ -9,26 +9,40 @@ body {
 }
 
 .menu-container {
-    width: 90%;
-    background: url('imagen');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none; 
-    background-color: transparent; 
-    max-width: 800px;
-    margin: 20px auto;
-    border: 2px solid #fffcfc;
-    background: rgba(0, 17, 255, 0.2);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    min-height: 600px; 
+    background: url('imagen') no-repeat center/cover;
+    max-width: 800px; 
     padding: 20px;
-    bottom: -20px;
+    margin: 20px auto;
+    background-color: rgba(0, 17, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeIn 1.5s forwards; 
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
 }
+
+
+
+@keyframes borderSpin {
+    0% {
+        border: 6px solid #0011ff; 
+    }
+    25% {
+        border: 2px solid #ff00ff; /* Cambia a otro color */
+    }
+    50% {
+        border: 2px solid #ffffff; /* Otro color diferente */
+    }
+    75% {
+        border: 2px solid #ff0000; /* Cambia nuevamente */
+    }
+    100% {
+        border: 6px solid #0011ff; /* Vuelve al color azul */
+    }
+}
+
 @font-face{
     font-family: 'pixel';
     src: url(letra/NerkoOne-Regular.ttf);
@@ -117,6 +131,7 @@ body {
     border: none;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
     color: #fffcfc;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;    
@@ -144,9 +159,9 @@ body {
 .btn-exitt{
     font-size: 20px;
     background-image: url(gif/estrellass.gif);
-    margin-top: -12px;
+    margin-top: 2px;
     color: #ffffff;
-    border: solid 3px #00eeff;
+    
 }
 
 
@@ -178,21 +193,27 @@ body {
     margin-bottom: 20px;
 }
 .message-box {
-    background-color: rgba(255, 255, 255, 0.9); 
-    border: none; 
-    padding: 20px 30px; 
+    
+    
+    
     margin: 30px auto; 
     position: relative;
-    top: 20px; 
+   background-color: #d1d1d1;
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
     line-height: 1.6; 
     text-align: center;
-    width: 60%; 
-    border-radius: 12px; 
+    justify-content: center;
+    width: 20%; 
+    height: 40%;
+    border-radius: 40px;
+    margin-top: 129px;
+    right: 519px;
+ border: 1px solid #000000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     color: #333; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
+    position: absolute;
 }
 .message-box:hover {
     transform: translateY(-5px); 
@@ -205,6 +226,14 @@ body {
     width: 100%;
     margin-top: 20px;
 }
+
+#welcomeText {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        white-space: pre-wrap; 
+        visibility: hidden; 
+}
+
 
 
 .footer .btn {
@@ -338,16 +367,16 @@ body {
 }
 
 .music-menu-button {
-    width: 20px; /* Reducido el ancho */
-    height: 100px; /* Reducido la altura */
+    width: 10px; 
+    height: 50px; 
     background-image: url(imagenes/icons8-menu-96.png);
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
     background-color: transparent;
     position: absolute; 
-    top: 9%; 
-    right: 20px; 
+    margin-top: -19px;
+    right: 260px; 
 }
 
 .music-menu-button:hover {
