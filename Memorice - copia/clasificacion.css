@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url(gif/descarga\ \(2\).gif);
+    background-image: url(gif/clasi2.gif);
     background-size:cover;
     overflow: hidden;
     font-family: 'Bungee', cursive;
@@ -25,7 +25,26 @@ body{
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1.5s forwards;
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
 }
+@keyframes borderSpin {
+    0% {
+        border: 6px solid #0011ff; 
+    }
+    25% {
+        border: 2px solid #2600ff; /* Cambia a otro color */
+    }
+    50% {
+        border: 2px solid #ffffff; /* Otro color diferente */
+    }
+    75% {
+        border: 2px solid #00b7ff; /* Cambia nuevamente */
+    }
+    100% {
+        border: 6px solid #0011ff; /* Vuelve al color azul */
+    }
+}
+
 
 
 .confetti-container {
@@ -57,6 +76,9 @@ body{
         opacity: 0;
     }
 }
+.container{
+    color: aliceblue;
+}
 
 .color{
     color: #63E6BE;
@@ -71,22 +93,45 @@ h2{
 }
 .text3 {
     overflow: hidden;
-    font-size: 300%;
+    font-size: 350%;
     margin-top: 30px;
-    color: #000000;
+    color: #1900ff;
     left: 0px;
     right: 0px;
     bottom: 85px;
-    
+    text-align: center;
+
+    /* Efecto de brillo en los lados */
+    text-shadow: 
+        -2px 0 15px rgba(255, 255, 255, 0.7),  /* Lado izquierdo */
+         2px 0 15px rgba(255, 255, 255, 0.7);  /* Lado derecho */
+
+    /* Animación del brillo */
+    animation: glow-sides 2s infinite alternate;
 }
+
+@keyframes glow-sides {
+    0% {
+        text-shadow: 
+            -2px 0 10px rgba(255, 255, 255, 0.3), /* Menor intensidad en el brillo */
+             2px 0 10px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        text-shadow: 
+            -2px 0 20px rgb(0, 4, 255), /* Mayor intensidad en el brillo */
+             2px 0 20px rgb(55, 0, 255);
+    }
+}
+
 .imagen {
     animation: imagen 2s infinite alternate ease-in-out;
-    width: 20%;
+    width: 13%;
     height: 20%;
     margin-top: -119px;
     margin-right: 8%;
 
 }
+
 .move{
     position: absolute;
     top: 200px;
@@ -96,8 +141,27 @@ h2{
     100% { transform: translateY(25px); }
 }
 .card{
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
     border: 3px solid;
-    background:rgba(255, 123, 0, 0.3)
+    background:rgba(0, 0, 0, 0.3)
+    
+}
+@keyframes borderSpin {
+    0% {
+        border: 2px solid #0011ff; 
+    }
+    25% {
+        border: 2px solid #00ffff; /* Cambia a otro color */
+    }
+    50% {
+        border: 2px solid #ffffff; /* Otro color diferente */
+    }
+    75% {
+        border: 2px solid #00b7ff; /* Cambia nuevamente */
+    }
+    100% {
+        border: 2px solid #0011ff; /* Vuelve al color azul */
+    }
 }
 
 
