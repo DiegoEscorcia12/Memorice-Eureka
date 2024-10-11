@@ -1,15 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./imagenes/headRobott.gif);
+    background-image: url(./gif/Neon\ and\ rain.gif);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #000;
     height: 100vh;
     overflow: hidden;
 }
-
+@media screen and (max-width: 767.7px){
+    body{
+        overflow: auto;
+    }
+}
+    
 .card {
     margin-bottom: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 

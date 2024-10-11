@@ -1,11 +1,12 @@
 body {
     margin: 0;
     font-family: 'Prompt', sans-serif;
-    background: url('imagenes/r364_akje_220615.jpg');
+    background: url('gif/register.gif');
     background-size: cover;
     color: #333;
+    height: 100vh;
+    background-position: center;
     overflow: hidden;
-    
 }
 
 .header {
@@ -43,10 +44,8 @@ form {
     border-radius: 16px;
     padding: 5%;
     background-color: rgba(255, 255, 255, 0.8); 
-    position: relative;
-    top: 0%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    background-image: url(imagenes/50748.jpg); 
+    background-image: url(./imagenes/50748.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     border: none; 
@@ -82,13 +81,10 @@ form {
     margin-left: 5px; 
 }
 .btn-primary {
-    background-image: url(imagenes/ers.png);
-    background-position: center;
-    border-radius: 6px;
-    position: relative;
-    left: 25%;
+    background-image: url(gif/fondo1.gif);
+    border-radius: 40px;
     border: 2px solid #881e8b00;
-    color: #fff;
+    color: #fcfcfc;
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
@@ -101,67 +97,6 @@ form {
     background-color: #3e2d5b;
     border-color: #7c1f78; 
 }
-
-.google-button, .faccebook-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%;
-    background-color: #6c757d00; 
-    color: #000000; 
-    border: none;
-    font-size: 39px; 
-    cursor: pointer;
-}
-
-.google-button:hover, .faccebook-button:hover, .music-button:hover {
-    background-color: #5a6268; 
-}
-
-.avatar-container {
-    position: absolute;
-    top: 3px; 
-    right: -30%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: transparent; 
-    animation: pulse 2s infinite;
-}
-
-.avatar-message {
-    background-color: #ffffffb0;
-    padding: 9px 9px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-    color: #000;
-    text-align: center;
-    font-size: 16px;
-    margin-top: -30px;
-    
-}
-
-.avatar::after {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 20%;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    transform: scaleX(-1);
-    filter: blur(3px);
-}
-
 
 .modal-title{
     color: #000000;
@@ -206,12 +141,9 @@ form {
     
 }
 .button-salida{
-    position: relative; 
     width: 50px; 
     height: 50px; 
-    top: 320px; 
     right: 90vh; 
-    margin-top: -50%;
     font-size: 22px; 
     background: #31a9a7;
     border-radius: 50%;
@@ -222,7 +154,6 @@ form {
 }
 .button-wrapper {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
 }
@@ -231,8 +162,6 @@ form {
 .button-image {
     width: 80px; 
     height: auto;
-    position: absolute;
-    top: -100px; 
 }
 @font-face {
     font-family: 'pixel';
@@ -244,8 +173,8 @@ form {
     font-family: 'pixel';
     font-size: 270%; 
     color: #ffffff;
-    margin-left: 29%;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-align: center;
 }
 
 @keyframes pulse {
@@ -264,12 +193,9 @@ form {
 }
 
 .button-salida {
-    position: relative; 
     width: 50px; 
     height: 50px; 
-    top: 250px; 
     right: 100vh; 
-    margin-top: -50%;
     font-size: 37px; 
     background: #31a9a70a;
     border-radius: 50%;
@@ -281,7 +207,6 @@ form {
 
 .button-wrapper {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
 }
@@ -289,8 +214,6 @@ form {
 .button-image {
     width: 80px; 
     height: auto;
-    position: absolute;
-    top: -100px; 
 }
 .music-button:hover {
     background-color: #5a6268;
@@ -300,24 +223,14 @@ form {
     background-color: transparent;
     border: none;
     color: #7c0e0e; 
-    font-size: 144%;
-    position: absolute;
-    right: 20px;
-    top: 20px;
     z-index: 1000;
 }
 
 .music-menu-button {
-    width: 78px;
-    height: 78px;
-    background-image: url(imagenes/icons8-menu-96.png);
-    background-size: cover;
+
     background-repeat: no-repeat;
     border: none;
-    background-color: transparent;
-    position: absolute; 
-    top: 20px; 
-    right: 20px; 
+    background-color: #ccc;
 }
 .music-menu-button:hover {
     opacity: 0.8;
@@ -346,15 +259,6 @@ form {
     background-color: #a42aaf;
 }
 .starry-background {
-    position: absolute;
-    width: 460%;
-    height: 460%;
-    background: url('imagenes/aca.png') repeat;
+    background: url('./imagenes/aca.png') repeat;
     animation: moveStars 70s linear infinite;
-}
-
-@keyframes moveStars {
-    
-    from { background-position: 0 0; }
-    to { background-position: -10000px 0; }
 }

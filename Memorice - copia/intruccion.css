@@ -1,16 +1,21 @@
 body{
     margin: 0;
-    background-image: url(/imagenes/r364_akje_220615.jpg);
+    background-image: url(./gif/2018\ GIFs\,\ Kenze\ Wee.gif);
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
     font-family: 'Bungee', cursive;
 }
+@media screen and (max-width: 767.7px){
+    body{
+        overflow: auto;
+    }
+}
 .menu-container {
     width: 100%;
-    max-width: 800px; /* Limita el ancho máximo */
-    right: 0;
-    left: 0;
-    background: url('imagenes/50748.jpg') no-repeat center center;
+    max-width: 800px; 
+    background: url('./imagenes/50748.jpg') no-repeat center center;
     background-size: cover;
     border: none;
     background-color: transparent;
@@ -18,10 +23,7 @@ body{
     border: 2px solid #8129aa;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    position: relative;
-    bottom: -20px;
     border-radius: 12px;
-
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1.5s forwards;
@@ -29,35 +31,25 @@ body{
 
 
 .text3 {
-    overflow: hidden;
-    font-size: 300%;
-    margin-top: -100px;
-    color: #000000;
-    left: 0px;
-    right: 0px;
-    bottom: 85px;
-    
+    font-family: 'pixel';
+    font-size: 3.5em;
+    color: rgb(0, 204, 255);
+    text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); 
+    text-transform: uppercase;
 }
 .imagen {
     animation: imagen 2s infinite alternate ease-in-out;
-    width: 20%;
-    height: 20%;
-    margin-top: -119px;
-    margin-left: 200px;
-
-
+    width: 100vh;
+    height: auto;
 }
-.move{
-    position: absolute;
-    top: 200px;
-}
+
 @keyframes imagen {
     0% { transform: translateY(0); }
     100% { transform: translateY(25px); }
 }
 .card{
     border: 3px solid;
-    background:rgba(255, 123, 0, 0.3)
+    background:rgba(0, 149, 255, 0.3)
 }
 
 
@@ -126,7 +118,7 @@ body{
     box-shadow: 0 8px 16px rgba(99, 71, 255, 0.6);
 }
 .modal-footer{
-    background-image: url(/imagenes/fondoM.jpeg);
+    background-image: url(.//imagenes/fondoM.jpeg);
 }
 .button-salida{
     font-size: 33px;
@@ -136,23 +128,12 @@ body{
     font-size: 30px;
     left: 10px;
 }
-.max{
-    width: 30%;
-    height: 80px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent; 
- 
-}
 .message-box {
    
-    background-color: rgba(179, 126, 126, 0.9); 
+    background-color: rgba(0, 120, 218, 0.9); 
     border: none; 
     padding: 20px 30px; 
     margin: 30px auto; 
-    position: relative;
-    top: -20px; 
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
     line-height: 1.6; 
@@ -165,7 +146,7 @@ body{
 }
 .message-box:hover {
     transform: translateY(-5px); 
-    background:rgba(255, 115, 0, 0.9); 
+    background:rgba(179, 0, 188, 0.9); 
 }
 .instruccion{
     font-size: 17px;
