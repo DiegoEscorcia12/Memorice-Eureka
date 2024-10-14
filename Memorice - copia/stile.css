@@ -39,18 +39,41 @@ body {
     }
 }
 
-form {
-    border: 2px solid #9547a546;
-    border-radius: 16px;
-    padding: 5%;
-    background-color: rgba(255, 255, 255, 0.8); 
+form{
+    padding: 2%; 
+    background: rgba(0, 0, 0, 0.2);
+    position: relative; 
+    bottom: 80px; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    background-image: url(./imagenes/50748.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
-    border: none; 
-    background-color: transparent; 
+    border-radius: 50px;
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
 }
+
+
+
+@keyframes borderSpin {
+    0% {
+        border: 2px solid #03063a; 
+    }
+    25% {
+        border: 2px solid #222222; /* Cambia a otro color */
+    }
+    50% {
+        border: 2px solid #ffffff; /* Otro color diferente */
+    }
+    75% {
+        border: 2px solid #00f7ff; /* Cambia nuevamente */
+    }
+    100% {
+        border: 2px solid #0011ff; /* Vuelve al color azul */
+    }
+}
+.w-100{
+    margin-top: 100px;
+}
+
 .form-label {
     font-family: 'Arial', sans-serif; 
     font-size: 19px; 

@@ -11,7 +11,7 @@ body {
 
 .logo {
     width: 20%; 
-    height: auto;
+    height: 30%;
     display: block;
     margin: 0 auto 12px; 
     animation: moveLogoVertical 2s infinite alternate ease-in-out;
@@ -27,7 +27,7 @@ body {
 }
 
 .menu-container {
-    width: 90%;
+    width: 9    0%;
     background-image: url(gif/descarga\ \(1\).gif);
     background-position: center;
     background-size: cover;
@@ -210,14 +210,14 @@ body {
 
 .message-box {
     background: rgba(248, 252, 11, 0.6);
-    border: none; 
-    padding: 20px 30px; 
+    border: none;   
     margin: 30px auto; 
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
-    line-height: 1.6; 
+ 
     text-align: center;
-    width: 60%; 
+    width: 10%; 
+    height: 0%;
     border-radius: 12px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     color: #333; 

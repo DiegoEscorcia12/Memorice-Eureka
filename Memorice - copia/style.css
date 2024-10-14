@@ -1,7 +1,7 @@
 body {
     font-family: 'Pixel', sans-serif;
     margin: 0;
-    background: url('gif/fondo2.gif');
+    background: url('gif/portadadelmenu.gif');
     padding: 0;
     background-size: cover;
     color: #333;
@@ -14,7 +14,7 @@ body {
     max-width: 800px; 
     padding: 20px;
     margin: 20px auto;
-    background-color: rgba(0, 17, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     display: flex;
@@ -91,6 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(imagenes/nube-removebg-preview.png);
 }
 .center-section h1 {
     font-size: 24px;
@@ -193,31 +194,31 @@ body {
     margin-bottom: 20px;
 }
 .message-box {
-    
-    
-    
+background-image: url(imagenes/nube-removebg-preview.png);
     margin: 30px auto; 
     position: relative;
    background-color: #d1d1d1;
+   border: none;
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
-    line-height: 1.6; 
+ 
     text-align: center;
+
     justify-content: center;
-    width: 20%; 
-    height: 40%;
+    
+    height: 60%;
     border-radius: 40px;
     margin-top: 129px;
     right: 519px;
- border: 1px solid #000000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-    color: #333; 
+    color: #000000; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
     position: absolute;
 }
 .message-box:hover {
     transform: translateY(-5px); 
     background-color: rgba(255, 255, 255, 1); 
+   
 }
 
 .footer {
@@ -406,15 +407,21 @@ body {
     background-color: #a42aaf;
 }
 .text3{
-        font-family: 'pixel';
+    font-family: 'pixel';
     font-size: 640%; 
     position: relative;
+    align-items: center;
     top: 0px;
+    border-radius: 10px;
     color: rgb(0, 204, 255);
-    left: 0px;
+    width: 170px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    left: 109px;
     right: 0px;
     bottom: 85px;
     text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); /* Luz en el texto */
+    background-image: url(gif/estrellass.gif);
     color: #d1d1d1;
     font-size: 72px
     
