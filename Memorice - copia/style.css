@@ -194,22 +194,20 @@ body {
     margin-bottom: 20px;
 }
 .message-box {
-background-image: url(imagenes/nube-removebg-preview.png);
+
     margin: 30px auto; 
     position: relative;
    background-color: #d1d1d1;
    border: none;
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
- 
+    font-family: "Pixel";
     text-align: center;
-
     justify-content: center;
-    
-    height: 60%;
-    border-radius: 40px;
+    height: 20%;
+    border-radius: 20px;
     margin-top: 129px;
-    right: 519px;
+    right: 490px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     color: #000000; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
@@ -426,4 +424,9 @@ background-image: url(imagenes/nube-removebg-preview.png);
     font-size: 72px
     
     
+}
+.same-size{
+
+    width: 70px;
+    height: 47px;
 }
