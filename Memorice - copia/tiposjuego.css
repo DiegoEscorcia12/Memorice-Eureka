@@ -236,6 +236,73 @@ body {
     background-repeat: no-repeat;
 
 }
+.modal {
+    display: none; /* Oculto inicialmente */
+    z-index: 1; /* Encima de otros elementos */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+.p {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 26px;
+    color: #000;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Centrar el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-exit:hover {
+    transform: translateY(-5px); 
+}
+
+.btn-exit {
+    font-size: 19px;
+    width: 129px;
+    height: 70px;
+    background-image: url(imagenes/Corto.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Botón de cierre del modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.footer .btn {
+    width: 100px;
+}
+
 .btn-secondary{
     background-color: #ffffff79;
     border: #00000000;

@@ -411,13 +411,16 @@ body {
     align-items: center;
     top: 0px;
     border-radius: 10px;
-    color: rgb(0, 204, 255);
+    
     width: 170px;
     height: 100px;
-    border: 1px solid #ffffff;
+   box-shadow: #000000;
     left: 109px;
     right: 0px;
     bottom: 85px;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 225, 255, 0.9)
+    );
     text-shadow: 0px 0px 36px rgba(0, 255, 255, 1); /* Luz en el texto */
     background-image: url(gif/estrellass.gif);
     color: #d1d1d1;

@@ -22,37 +22,76 @@
                 <img src="./imagenes/we.png" class="max" alt="max">
             </div>
             <div class="button-container">
-                <a href="" class="btn play">Memorice-fruta</a>
-                <a href="memoris.html" class="btn scores">Memorice-animal</a>
-                <a href="" class="btn options">Quiz</a>
+                 <a href="laberinto" class="btn-play"> <p class="p">Laberinto-Online</p></a>
+                <a href="puntuloa.html" class="btn-scores"><p class="p">Sala</p></a>
+                <a href="memoris.html" class="btnscores"><p class="p">MEMORICE-ANIMAL</p></a>
             </div>
         </div>
         <div class="footer">
-            <a href="menuloads.html" class="btn exit">Salir</a> 
+            <a href="loading.html" class=" "></a>
+           
+<a href="#" class="btn play" id="playButton" style="background-color: #28a745; color: white; padding: 12px 24px; border-radius: 8px; text-align: center; text-decoration: none;">Sala</a>
+
+<!-- Estructura del modal -->
+<div id="gameModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>¿Listo para jugar?</h2>
+    <p>Crea Una Sala O Unite a una Para que puedas divertirte con tus amigos :)</p>
+    <a href="loadingunir.html" class="btn-exit" style="background-color: #007bff; color: white; padding: 10px 20px;margin-left: 100px; border-radius: 5px; text-decoration: none;">UNIRME  SALA</a>
+    <a href="loading.html" class="btn-exit" style="background-color: #28578a; color: white; padding: 10px 20px;margin-left: 300px; margin-top: -76px;  text-decoration: none;">CREAR SALA</a>
+  </div>
+</div>
+
+<script>
+  var modal = document.getElementById("gameModal");
+  var playBtn = document.getElementById("playButton");
+  var span = document.getElementsByClassName("close")[0];
+
+
+  playBtn.onclick = function(event) {
+    event.preventDefault(); 
+    modal.style.display = "block"; // Mostrar modal
+  }
+
+  
+  span.onclick = function() {
+    modal.style.display = "none"; // Ocultar modal
+  }
+
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
         </div>
-        <div class="menu-button-container">
-            <div class="dropdown">
-                <button class="btn dropdown-toggle music-menu-button" type="button" id="menuDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-                    <li>
-                        <button id="music-toggle" class="dropdown-item">
-                            <i class="fa-solid fa-music"></i> Música
-                        </button>
-                    </li>
-                    <li>
-                        <button id="info-button" class="dropdown-item" data-bs-toggle="modal"
-                            data-bs-target="#infoModal">
-                            <i class="fa-regular fa-circle-question"></i> Información
-                        </button>
-                    </li>
-                </ul>
-            </div>
+        
+    </div>
+    <div class="menu-button-container">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle music-menu-button" type="button" id="menuDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li>
+                    <button id="music-toggle" class="dropdown-item">
+                        <i class="fa-solid fa-music"></i> Música
+                    </button>
+                </li>
+                <li>
+                    <button id="info-button" class="dropdown-item" data-bs-toggle="modal"
+                        data-bs-target="#infoModal">
+                        <i class="fa-regular fa-circle-question"></i> Información
+                    </button>
+                </li>
+            </ul>
         </div>
-        </div> 
     </div>
-    </div>
+    
+</div>
 
 
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
@@ -77,7 +116,7 @@
             </div>
         </div>
     </div>
-    <audio id="background-music" src="musica/WhatsApp Audio 2024-09-11 at 8.50.35 PM.mpeg" loop></audio>
+    <audio id="background-music" src="musica/DuckTales Music (NES) - The Moon Theme.mp3" loop></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/musi.js"></script>
