@@ -211,7 +211,7 @@ h2{
   }
   .musica:hover {
   
-    transform: translateY(-18px); 
+    transform: translateY(-10px); 
     box-shadow: 0 12px 24px rgba(99, 71, 255, 0.8);
 }
   
