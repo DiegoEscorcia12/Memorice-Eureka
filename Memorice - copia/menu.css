@@ -190,10 +190,7 @@ body {
     background-color: #9d62f0;
 }
 
-.btn.exit {
-    background-color:#4ff7ca;
-    
-}
+
 .btn:focus {
     outline: 2px solid #4fc3f7; 
     outline-offset: 4px;
@@ -293,6 +290,9 @@ body {
     font-family: "Jersey 25", sans-serif;
     font-size: 26px;
     color: #000;
+}
+.btn-exit{
+    background-image: url(gif/XD.gif);
 }
 
 /* Contenido del modal */
