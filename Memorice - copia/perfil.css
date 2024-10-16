@@ -95,13 +95,11 @@ h2 {
     font-size: 28px;
 }
 
-/* Imagen de la vela */
 .gif {
     width: 90px;
     height: 90px;
 }
 
-/* Texto superpuesto */
 .overlay-text {
     margin-left: 35px;
     color: rgb(255, 0, 0);

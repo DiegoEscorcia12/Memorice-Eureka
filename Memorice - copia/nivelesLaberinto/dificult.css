@@ -1,0 +1,77 @@
+body{
+    background-image: url(../gif/Retronator.gif);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+}
+.card{
+    width: 30vh;
+    height: 30vh;
+    background-color: #ffffff;
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
+}
+@keyframes borderSpin {
+    0% {
+        border: 1px solid #0011ff; 
+        box-shadow: -1px 2px 198px 26px rgba(0, 172, 224, 0.79);
+        -webkit-box-shadow: -1px 2px 198px 26px rgba(12, 117, 255, 0.79);
+        -moz-box-shadow: -1px 2px 198px 26px rgba(12,242,255,0.79);
+    }
+    25% {
+        border: 2px solid #00e1ff;
+        
+    }
+    50% {
+        border: 2px solid #ffffff;
+    }
+    75% {
+        border: 2px solid #00f7ff;
+    }
+    100% {
+        border: 2px solid #0011ff;
+    }
+}
+.letra{
+    display: none;
+}
+.message-box {
+
+    margin: 30px auto; 
+    background-color: #d1d1d14d;
+    backdrop-filter: blur(0.4em);
+    border: none;
+    font-size: 1.2rem; 
+    font-family: 'Arial', sans-serif; 
+    font-family: "Pixel";
+    text-align: center;
+    justify-content: center;
+    width: 490px;
+    height: 20vh;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    color: #000000; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+.title1{
+    color:rgb(34, 189, 228);
+}
+.title1:hover{
+    color: rgb(0, 255, 242);
+}
+.title2{
+    color:rgb(34, 189, 228);
+}
+.title2:hover{
+    color: rgb(0, 255, 242);
+}
+.title3{
+    color:rgb(34, 189, 228);
+    
+}
+.title3:hover{
+    color: rgb(0, 255, 242);
+}
