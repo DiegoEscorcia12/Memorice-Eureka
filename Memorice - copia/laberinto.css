@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+#wall{
+    border: 1px solid #000;
+}
+#floor{
+    border: 1px solid #000;
+}

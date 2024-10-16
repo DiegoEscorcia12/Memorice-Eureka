@@ -196,9 +196,14 @@ body {
 .message-box {
 
     margin: 30px auto; 
+<<<<<<< HEAD
  
    background-color: #d1d1d1;
    border: none;
+=======
+    background-color: #d1d1d1;
+    border: none;
+>>>>>>> 8902654417c21ca3a68e0b2653aa7b873e4d3146
     font-size: 1.2rem; 
     font-family: 'Arial', sans-serif; 
     font-family: "Pixel";
@@ -206,11 +211,17 @@ body {
     justify-content: center;
     height: 20%;
     border-radius: 20px;
+<<<<<<< HEAD
     right: 3%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     color: #000000; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
    
+=======
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    color: #000000; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+>>>>>>> 8902654417c21ca3a68e0b2653aa7b873e4d3146
 }
 .message-box:hover {
     transform: translateY(-5px); 
