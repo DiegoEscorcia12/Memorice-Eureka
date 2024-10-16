@@ -14,148 +14,6 @@
     
 </head>
 <body>
-
-    <div class=" text-center" >
-        <div class="menu-container"> 
-        
-        <div class="col-0 d-flex justify-content-between mt-2">
-            <div class="button-wrapper">
-                <div class="button-salida">
-                    <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="btn dropdown-toggle music-menu-button" type="button" id="menuDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-                    <li>
-                        <button id="music-toggle" class="dropdown-item">
-                            <i class="fa-solid fa-music"></i> Música
-                        </button>
-                    </li>
-                    <li>
-                        <button id="info-button" class="dropdown-item" data-bs-toggle="modal"
-                            data-bs-target="#infoModal">
-                            <i class="fa-regular fa-circle-question"></i> Información
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row mt-4 justify-content-center">
-            <img class="imagen col-4 ms-5" src="./imagenes/robott-removebg-preview.png" alt="">
-        </div>
-        <h1 class="text4 animate__animated animate__fadeInDown">Calificaciones</h1>
-
-        <!-- Scores Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-7">
-               
-                 <style>
-        .card {
-            margin-bottom: 10px;
-            transition: transform 0.5s ease, opacity 0.5s ease;
-        }
-    </style>
-                
-                <div class="container">
-                    <div id="ranking">
-                        <div class="card mb-4">
-                            <div class="card-body d-flex align-items-center">
-                                <i class="fa-solid fa-user-astronaut me-3 fa-2x text-primary"></i>
-                                <div class="titulo1">
-                                    <h5 class="card-title">Manuel Felipe</h5>
-                                    <p class="card-text">20,290 Puntos</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <i class="fa fa-user-circle fa-2x"></i> Jorge
-                                </div>
-                                <span>12,480 Puntos</span>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <i class="fa fa-user-circle fa-2x"></i> Trespalacios
-                                </div>
-                                <span>10,430 Puntos</span>
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <i class="fa fa-user-circle fa-2x"></i> Andrés
-                                </div>
-                                <span>4,420 Puntos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <script>
-       function swapElements(parent, index1, index2) {
-            const elements = parent.children;
-            if (index1 >= 0 && index2 >= 0 && index1 < elements.length && index2 < elements.length) {
-                // Intercambiar los elementos
-                const firstElement = elements[index1];
-                const secondElement = elements[index2];
-                parent.insertBefore(secondElement, firstElement);
-            }
-        }
-
-        // Función para rotar los elementos ordenadamente
-        function rotateElements(parent) {
-            let index = 0;
-            const totalElements = parent.children.length;
-
-            setInterval(() => {
-                // Mueve el primer elemento al final
-                if (index < totalElements - 1) {
-                    swapElements(parent, index, index + 1);
-                    index++;
-                } else {
-                    index = 0; // Reiniciar para continuar el ciclo
-                }
-            }, 1500); // Intervalo de 1.5 segundos entre cada movimiento
-        }
-
-        // Ejecutar la rotación cuando la página se cargue
-        window.addEventListener("load", function() {
-            var rankingContainer = document.getElementById("ranking");
-
-            // Llamar a la función para rotar los elementos
-            rotateElements(rankingContainer);
-        });
-                </script>
-
-        <!-- Modal de información -->
-        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="infoModalLabel">Información del Juego</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>¡Bienvenido a MEMORY! Este juego está diseñado para desafiar y mejorar tu memoria. Selecciona las cartas que coincidan y completa todos los pares en el menor tiempo posible.</p>
-                        <ul>
-                            <li><strong>Objetivo:</strong> Emparejar todas las cartas lo más rápido posible.</li>
-                            <li><strong>Controles:</strong> Haz clic en una carta para voltearla.</li>
-                            <li><strong>Niveles:</strong> Varios niveles de dificultad para todos los jugadores.</li>
-                            <li><strong>Sonido:</strong> Controla la música de fondo desde el menú.</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Confetti container -->
         <div class="confetti-container"></div>
 
@@ -163,6 +21,8 @@
         <audio id="background-music" src="./musica/DuckTales Music (NES) - The Moon Theme.mp3" loop></audio>
 
         <!-- Scripts -->
+         <script src="./js/movimientoClasificatoria.js"></script>
+         <script src="./js/clasificacion.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
         <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
         <script src="./js/musi.js"></script>

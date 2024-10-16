@@ -1,0 +1,29 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "manuel_felipe",
+        "password": "12345678",
+        "email": "manuelfelipe@gmail.com",
+        "role": "admin",
+        "status": "active"
+      },
+      {
+        "id": 2,
+        "username": "jorge",
+        "password": "123",
+        "email": "jorge@gmail.com",
+        "role": "user",
+        "status": "active"
+      },
+      {
+        "id": 3,
+        "username": "andres_garcia",
+        "password": "garcia1234",
+        "email": "andres.garcia@gmail.com",
+        "role": "user",
+        "status": "inactive"
+      }
+    ]
+  }
+  
