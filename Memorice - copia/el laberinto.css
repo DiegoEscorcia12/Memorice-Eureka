@@ -1,0 +1,12 @@
+body{
+    position: relative;
+    background-image: url(imagenes/pasto.jpg);
+    background-position: center;
+    
+}
+.muro{
+    background-image: url(imagenes/muro.jpg);
+    position: relative;
+    width: 100vh;
+  
+}

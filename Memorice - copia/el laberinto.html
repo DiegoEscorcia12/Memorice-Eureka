@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto Mejorado</title>
+    <style>
+        /* Estilos Básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            background-image: url('imagenes/pasto.jpg'); /* Ruta a la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        #laberinto {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(20, 30px);
+            grid-template-rows: repeat(20, 30px);
+            gap: 2px;
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente para resaltar el laberinto */
+            border: 5px solid #000;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .celda {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            transition: background-color 0.2s;
+        }
+
+        .pared {
+            background-image: url('imagenes/pared.png'); /* Ruta a la imagen de la pared */
+            background-size: cover;
+        }
+
+        #jugador {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            transition: top 0.2s, left 0.2s;
+            z-index: 10;
+            background-image: url('imagenes/jugador.png'); /* Ruta a la imagen del jugador */
+            background-size: cover;
+        }
+
+        #meta {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            z-index: 5;
+            background-image: url('imagenes/meta.png'); /* Ruta a la imagen de la meta */
+            background-size: cover;
+        }
+
+        #info {
+            margin-top: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Responsividad */
+        @media (max-width: 700px) {
+            #laberinto {
+                grid-template-columns: repeat(20, 20px);
+                grid-template-rows: repeat(20, 20px);
+            }
+
+            .celda, #jugador, #meta {
+                width: 18px;
+                height: 18px;
+            }
+
+            #jugador, #meta {
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Laberinto Mejorado</h1>
+    <div id="laberinto">
+        <!-- Las celdas del laberinto se generarán dinámicamente -->
+    </div>
+
+    <!-- Personaje -->
+    <div id="jugador"></div>
+
+    <!-- Meta -->
+    <div id="meta"></div>
+
+    <!-- Información y Control -->
+    <div id="info">
+        <button id="reset">Reiniciar Juego</button>
+    </div>
+
+    <script>
+        const laberinto = document.getElementById('laberinto');
+        const jugador = document.getElementById('jugador');
+        const meta = document.getElementById('meta');
+        const resetButton = document.getElementById('reset');
+
+        // Definir el tamaño del laberinto
+        const filas = 20;
+        const columnas = 20;
+
+        // Crear el laberinto
+        // 0 = camino, 1 = pared
+        const mapa = [
+            [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            [0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+            [0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0],
+            [0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0],
+            [0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0],
+            [0,1,0,1,0,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0],
+            [0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0],
+            [0,1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0],
+            [0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0],
+            [0,1,1,1,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        ];
+
+        // Generar las celdas del laberinto
+        for (let y = 0; y < filas; y++) {
+            for (let x = 0; x < columnas; x++) {
+                const celda = document.createElement('div');
+                celda.classList.add('celda');
+                if (mapa[y][x] === 1) {
+                    celda.classList.add('pared');
+                }
+                laberinto.appendChild(celda);
+            }
+        }
+
+        // Posición inicial del jugador (x, y)
+        let jugadorPos = { x: 0, y: 0 };
+
+        // Posición de la meta
+        const metaPos = { x: 19, y: 19 };
+
+        // Función para actualizar la posición del jugador en la pantalla
+        function actualizarJugador() {
+            jugador.style.left = `${jugadorPos.x * 32}px`; // 30px celda + 2px gap
+            jugador.style.top = `${jugadorPos.y * 32}px`;
+        }
+
+        // Función para actualizar la posición de la meta en la pantalla
+        function actualizarMeta() {
+            meta.style.left = `${metaPos.x * 32}px`;
+            meta.style.top = `${metaPos.y * 32}px`;
+        }
+
+        // Inicializar posiciones
+        actualizarJugador();
+        actualizarMeta();
+
+        // Manejar el movimiento del jugador
+        document.addEventListener('keydown', (event) => {
+            let nuevaPos = { ...jugadorPos };
+            switch (event.key) {
+                case 'ArrowUp':
+                case 'w':
+                case 'W':
+                    nuevaPos.y -= 1;
+                    break;
+                case 'ArrowDown':
+                case 's':
+                case 'S':
+                    nuevaPos.y += 1;
+                    break;
+                case 'ArrowLeft':
+                case 'a':
+                case 'A':
+                    nuevaPos.x -= 1;
+                    break;
+                case 'ArrowRight':
+                case 'd':
+                case 'D':
+                    nuevaPos.x += 1;
+                    break;
+                default:
+                    return; // Ignorar otras teclas
+            }
+
+            // Comprobar límites
+            if (nuevaPos.x < 0 || nuevaPos.x >= columnas || nuevaPos.y < 0 || nuevaPos.y >= filas) {
+                return;
+            }
+
+            // Comprobar si la nueva posición es una pared
+            if (mapa[nuevaPos.y][nuevaPos.x] === 1) {
+                // Opcional: Feedback visual en colisión
+                const celdaIndex = nuevaPos.y * columnas + nuevaPos.x;
+                const celdas = document.querySelectorAll('.celda');
+                const pared = celdas[celdaIndex];
+                pared.style.backgroundColor = '#ff0000'; // Rojo para indicar colisión
+                setTimeout(() => {
+                    pared.style.backgroundImage = "url('imagenes/pared.png')"; // Restaurar imagen de la pared
+                }, 200);
+                return;
+            }
+
+            // Actualizar posición del jugador
+            jugadorPos = nuevaPos;
+            actualizarJugador();
+
+            // Verificar si ha llegado a la meta
+            if (jugadorPos.x === metaPos.x && jugadorPos.y === metaPos.y) {
+                setTimeout(() => {
+                    alert('¡Felicidades! Has llegado a la meta.');
+                    reiniciarJuego();
+                }, 100);
+            }
+        });
+
+        // Función para reiniciar el juego
+        function reiniciarJuego() {
+            jugadorPos = { x: 0, y: 0 };
+            actualizarJugador();
+        }
+
+        // Manejar el botón de reiniciar
+        resetButton.addEventListener('click', () => {
+            reiniciarJuego();
+        });
+    </script>
+
+</body>
+</html>

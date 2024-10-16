@@ -196,7 +196,7 @@ body {
 .message-box {
 
     margin: 30px auto; 
-    position: relative;
+ 
    background-color: #d1d1d1;
    border: none;
     font-size: 1.2rem; 
@@ -206,12 +206,11 @@ body {
     justify-content: center;
     height: 20%;
     border-radius: 20px;
-    margin-top: 129px;
-    right: 490px;
+    right: 3%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     color: #000000; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
-    position: absolute;
+   
 }
 .message-box:hover {
     transform: translateY(-5px); 
