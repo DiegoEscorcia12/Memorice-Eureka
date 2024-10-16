@@ -1,7 +1,7 @@
 body {
     font-family: 'sans-serif';
     margin: 0;
-    background: url('imagenes/r364_akje_220615.jpg');
+    background: url('gif/descarga\ \(17\).gif');
     padding: 0;
     background-size: cover;
     color: #333;
@@ -42,7 +42,46 @@ body {
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1.5s forwards; 
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
 }
+
+@keyframes borderSpin {
+    0% {
+        border: 4px solid #0011ff; 
+    }
+    25% {
+        border: 2px solid #ff00ff; /* Cambia a otro color */
+    }
+    50% {
+        border: 2px solid #ffffff; /* Otro color diferente */
+    }
+    75% {
+        border: 2px solid #00f7ff; /* Cambia nuevamente */
+    }
+    100% {
+        border: 4px solid #0011ff; /* Vuelve al color azul */
+    }
+}
+
+.btnplay{
+    color: #ffffff;
+    text-align: center;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 225, 255, 0.9)
+    );
+    font-size: 28px;
+    background: url('gif/XD.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none; 
+    background-color: transparent; 
+    width: 14%;
+    padding: 1px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 6px;
+    }
+
 @font-face{
     font-family: 'pixel';
     src: url(letra/NerkoOne-Regular.ttf);
@@ -55,11 +94,16 @@ body {
     }
 }
 .header {
+    color: #ffffff;
     text-align: center;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 225, 255, 0.9)
+    );
     font-size: 28px;
-    background: url('imagenes/OLQCP30.jpg');
+    background: url('gif/XD.gif');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border: none; 
     background-color: transparent; 
     width: 40%;
@@ -121,10 +165,16 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-    background-color: #ffd54f;
     border: none;
     border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url(gif/fondo1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ffffff;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 225, 255, 0.9)
+    );
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;    
 }
@@ -134,22 +184,13 @@ body {
     transform: scale(1.05);
 }
 
-.btn.play {
-    background-color: #4ff7ca;
-}
 
-.btn.scores {
-    background-color: #9d62f0;
-}
 
 .btn.options {
     background-color: #9d62f0;
 }
 
-.btn.exit {
-    background-color:#4ff7ca;
-    
-}
+
 .btn:focus {
     outline: 2px solid #4fc3f7; 
     outline-offset: 4px;
@@ -159,7 +200,8 @@ body {
     margin-bottom: 20px;
 }
 .message-box {
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(35, 74, 117, 0.9); 
+    color: #ff0000;
     border: none; 
     padding: 20px 20px; 
     margin: 20px auto; 
@@ -178,7 +220,7 @@ body {
 }
 .message-box:hover {
     transform: translateY(-5px); 
-    background-color: rgba(255, 255, 255, 1); 
+    background-color: rgb(8, 115, 216); 
 }
 
 .footer {
@@ -271,10 +313,16 @@ body {
     font-size: 19px;
     width: 129px;
     height: 70px;
-    background-image: url(imagenes/Corto.jfif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+border: 3px solid #00ccff;
+filter: drop-shadow(
+        0 0 10px rgba(0, 225, 255, 0.9)
+    );
+}
+h2{
+    color: #d1d1d1;
+}
+p{
+    color: #d1d1d1;
 }
 
 /* Botón de cierre del modal */
@@ -297,6 +345,18 @@ body {
     justify-content: space-between;
     width: 100%;
 
+}
+.btn-play{
+    background-image: url(gif/fondo1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 55px;
+    border: 1px solid #ffffff;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 225, 255, 0.9)
+    );
 }
 
 .footer .btn {

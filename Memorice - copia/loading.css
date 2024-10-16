@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-    background: url('gif/Loading\ \(2\).gif');
+    background: url('gif/floating.gif');
     background-size:cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -22,10 +22,10 @@ body {
     
 }
 .logo {
-    width: 66%;
-    left: 36%;
-    margin-top: -180px;
-    margin-left: -240px;
+    width: 106%;
+    left: 56%;
+    margin-top: -69vh;
+    margin-left: -128vh;
     position: relative;
     bottom: 55px;
     border-radius: 80%;
