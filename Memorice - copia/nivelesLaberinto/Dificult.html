@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="./dificult.css">
 </head>
 <body>
-    <div class="container mt-5 d-flex flex-column align-items-center text-center p-0">
-        <h1>seleciona dificultad</h1>
-        <div class="message-box">
-            <p id="welcomeText"></p>
-
-            <img src="imagenes/mensaje.jfif" class="same-size max" alt="Max">
-        </div>
-        <div class="content-card mt-5 gap-4 d-flex text-center align-items-center p-0">
-            <div class="center-section">
-                
+    <body class="d-flex flex-column min-vh-100">
+        <div class="container mt-5 flex-grow-1 d-flex flex-column align-items-center text-center">
+            <h1>Selecciona Dificultad</h1>
+            <div class="message-box">
+                <p id="welcomeText"></p>
+                <img src="imagenes/mensaje.jfif" class="same-size max" alt="Max">
             </div>
-        <div class="d-flex ">
-            <div class="card col-1 title1 ">
-                <h1>Fácil</h1>
-                <span class="letra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis qui delectus repudiandae iure quod rerum earum sunt harum fugit? Pariatur quod, adipisci temporibus obcaecati magnam assumenda accusantium repellat. Esse.</ class="letra">
-            </div>
-        </div>
-        <div class="d-flex ">
-            <div class="card col-1 title2">
-                <h1>Normal</h1>
-                <span class="letra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis qui delectus repudiandae iure quod rerum earum sunt harum fugit? Pariatur quod, adipisci temporibus obcaecati magnam assumenda accusantium repellat. Esse.</span>
-            </div>
-        </div>
-        <div class="d-flex ">
-            <div class="card col-1 title3">
-                <h1>Díficil</h1>
-                <span class="letra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis qui delectus repudiandae iure quod rerum earum sunt harum fugit? Pariatur quod, adipisci temporibus obcaecati magnam assumenda accusantium repellat. Esse.</span>
+            <!-- flex-grow-1 para empujar las cartas -->
+            <div class="flex-grow-1"></div> 
+            <!-- Cards dentro de un div que también tenga flex-grow-0 -->
+            <div class="content-card d-flex justify-content-center gap-4 mb-5">
+                <div class="card title1" style="width: 18rem;">
+                    <h5 class="card-title">Fácil</h5>
+                    <div class="card-text">Perfecto para principiantes. En este nivel tendrás más tiempo para memorizar las palabras y los enemigos serán más lentos. Ideal para aprender y practicar sin mucha presión.</div>
+                </div>
+                <div class="card title2" style="width: 18rem;">
+                    <h5 class="card-title">Normal</h5>
+                    <div class="card-text">Una experiencia equilibrada. Los desafíos se intensifican con menos tiempo para memorizar y enemigos más rápidos. Es la opción ideal si quieres una mezcla de diversión y reto.</div>
+                </div>
+                <div class="card title3" style="width: 18rem;">
+                    <h5 class="card-title">Difícil</h5>
+                    <div class="card-text">Para los verdaderos expertos. Tendrás muy poco tiempo para memorizar las palabras y los enemigos serán rápidos e implacables. Solo los mejores podrán superar este desafío.</div>
+                </div>
             </div>
         </div>
-    </div>
+        <script src="../js/dificult.js"></script>
+        <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    </body>
+    
     </div>
     <script src="../js/dificult.js"></script>
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
