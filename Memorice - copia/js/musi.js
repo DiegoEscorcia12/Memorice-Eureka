@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-const sound = new Audio('musica/stop-13692.mp3');
+const sound = new Audio('musica/free-fire.mp3');
 
 document.querySelector('.logo').addEventListener('mouseenter', () => {
     sound.currentTime = 0;

@@ -4,31 +4,81 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="/Memorice - copia/bootstrap-5.3.3-dist/css/bootstrap.css">
+	<script src="/Memorice - copia/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 	<div class="contenedor">
-		<h1 class="text3 animate__animated animate__fadeInDown">STOP</h1>
-		<div class="caras">
-			<img class="caraver" src="/Memorice - copia/imagenes/cara_verde-removebg-preview.png" 	alt="">
-			<a class="btn btn-primary btn-lg" href="/Memorice - copia/ruleta 1/index.html">Facil</a>
-			<img class="caraama" src="/Memorice - copia/imagenes/cara_amarilla-removebg-preview.png" alt="">
-			<a class="amarillo" href="/Memorice - copia/ruleta 1/index.html">Medio</a>
-			<img class="cararoja" src="/Memorice - copia/imagenes/cara_roja-removebg-preview.png" alt="">
-			<a class="rojo" href="/Memorice - copia/ruleta 1/index.html">Dificil</a>
+		<div class="bn">
+			<h1 class="text3 animate__animated animate__fadeInDown">STOP</h1>
+			<h1 class="text4">DIFICULTAD: Facil</h1>
 		</div>
+	
 		<div class="concursantes">
 			<canvas id="idcanvas" width="600" height="600"></canvas>
-			<br>
-			<button onclick="sortear()"><span id="idestado">GIRAR</span></button>
-			<div class="mark-winner"></div>
+
+     <button id="botonCentro" style="position:absolute; top: 170px; left: 100px; z-index: 1;" onclick="sortear()">Girar</button>
+	
+       <p id="contador"></p>
+       <div class="mark-winner"></div>
+        <p id="idestado"></p>
 		</div>
-		
+		</div>
+		<canvas id="idcanvas" width="400" height="400"></canvas>
+	
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>¡La ruleta se ha detenido!</p>
+				<form class="row g-3 needs-validation" novalidate>
+					<div class="col-md-4">
+					  <label for="validationCustom01" class="form-label">Nombre</label>
+					  <input type="text" class="form-control" id="validationCustom01" value="" required>
+					  <div class="valid-feedback">
+						Looks good!
+					  </div>
+					</div>
+					<div class="col-md-4">
+					  <label for="validationCustom02" class="form-label">Ciudad</label>
+					  <input type="text" class="form-control" id="validationCustom02" value="" required>
+					  <div class="valid-feedback">
+						Looks good!
+					  </div>
+					</div>
+					<div class="col-md-4">
+					  <label for="validationCustomUsername" class="form-label">Animal</label>
+					  <div class="input-group has-validation">
+						
+						<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+						<div class="invalid-feedback">
+						  Please choose a username.
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-6">
+					  <label for="validationCustom03" class="form-label">City</label>
+					  <input type="text" class="form-control" id="validationCustom03" required>
+					  <div class="invalid-feedback">
+						Please provide a valid city.
+					  </div>
+					</div>
+					
+					
+				
+					
+					<div class="col-12">
+					  <button class="btn btn-primary" type="submit">Close</button>
+					</div>
+				  </form>
+			</div>
 		</div>
 		
 	<script src="ruleta.js"></script>
+	
 	
 </body>
 </html>

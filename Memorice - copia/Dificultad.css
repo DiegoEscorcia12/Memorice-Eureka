@@ -1,0 +1,41 @@
+
+body{
+    background-image: url(gif/dificultadd.gif);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+}
+.card{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 100px;
+    background: rgba(12, 117, 255, 0.2);
+    animation: fadeIn 1.5s forwards, borderSpin 3s linear infinite;
+}
+
+.letra{
+    display: none;
+}
+.title1{
+    color:rgb(34, 189, 228);
+}
+.title1:hover{
+    color: rgb(0, 255, 242);
+}
+.title2{
+    color:rgb(34, 189, 228);
+}
+.title2:hover{
+    color: rgb(0, 255, 242);
+}
+.title3{
+    color:rgb(34, 189, 228);
+    
+}
+.title3:hover{
+    color: rgb(0, 255, 242);
+}
